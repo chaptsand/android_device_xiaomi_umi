@@ -35,6 +35,9 @@ PRODUCT_PACKAGES += \
     init.xiaomi.rc \
     ueventd.qcom.rc
 
+# Namespaces
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
