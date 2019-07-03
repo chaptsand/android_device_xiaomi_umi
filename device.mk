@@ -342,6 +342,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
 # QMI
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
 PRODUCT_PACKAGES += \
     libjson
 
