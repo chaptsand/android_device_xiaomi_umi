@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Defines the location of the fingerprint sensor on the device:
+         0 = Back
+         1 = Front
+         2 = Left
+         3 = Right
+    -->
+    <integer name="config_fingerprintSensorLocation">1</integer>
+
+</resources>
