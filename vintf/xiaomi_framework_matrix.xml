@@ -6,6 +6,14 @@
 <compatibility-matrix version="2.0" type="framework">
     <!-- Fingerprint -->
     <hal format="hidl" optional="true">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <version>2.0-1</version>
+        <interface>
+            <name>IGoodixFingerprintDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.fingerprintextension</name>
         <version>1.0</version>
         <interface>
