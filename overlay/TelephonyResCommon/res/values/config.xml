@@ -18,10 +18,10 @@
     <integer name="OtaShowListeningScreen">1</integer>
 
     <!-- String indicating the package name of the device ImsService implementation for MMTEL. -->
-    <string name="config_ims_mmtel_package">org.codeaurora.ims</string>
+    <string name="config_ims_mmtel_package" translatable="false">org.codeaurora.ims</string>
 
     <!-- String indicating the package name of the device ImsService implementation for RCS. -->
-    <string name="config_ims_rcs_package">vendor.qti.imsrcs</string>
+    <string name="config_ims_rcs_package" translatable="false">vendor.qti.imsrcs</string>
 
     <!-- The package name for the platform number verification supplier app. -->
     <string name="platform_number_verification_package">com.google.android.gms</string>
