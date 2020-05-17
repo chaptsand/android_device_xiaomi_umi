@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon \
     SystemUIResCommon \
     TelephonyResCommon \
-    WifiResCommon
+    UmiFrameworks \
+    WifiResCommon \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
