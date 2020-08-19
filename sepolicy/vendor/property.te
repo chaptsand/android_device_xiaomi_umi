@@ -1,11 +1,11 @@
-type vendor_camera_sensor_prop, property_type, vendor_property_type;
+vendor_internal_prop(vendor_camera_sensor_prop)
 
-type vendor_fp_prop, property_type;
+vendor_internal_prop(vendor_device_prop)
 
-type vendor_device_prop, property_type;
+vendor_internal_prop(vendor_thermal_normal_prop)
+
+vendor_public_prop(vendor_fp_prop)
 
 vendor_public_prop(vendor_payment_security_prop)
 
-type thermal_normal_prop, property_type;
-
-type vendor_touchfeature_prop, property_type;
+vendor_public_prop(vendor_touchfeature_prop)
