@@ -57,6 +57,6 @@ allow mi_thermald sysfs:{
 } rw_file_perms;
 
 # Allow mi_thermald to set thermal profile
-set_prop(mi_thermald, thermal_normal_prop)
+set_prop(mi_thermald, vendor_thermal_normal_prop)
 
 dontaudit mi_thermald self:capability dac_override;
