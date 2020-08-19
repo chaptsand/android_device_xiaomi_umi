@@ -14,7 +14,7 @@ vendor.fps_hal.                             u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.pay.ifaa                 u:object_r:vendor_payment_security_prop:s0
 
 # Thermal
-vendor.sys.thermal.                         u:object_r:thermal_normal_prop:s0
+vendor.sys.thermal.                         u:object_r:vendor_thermal_normal_prop:s0
 
 # Touchfeature
 ro.vendor.touchfeature.type                 u:object_r:vendor_touchfeature_prop:s0
