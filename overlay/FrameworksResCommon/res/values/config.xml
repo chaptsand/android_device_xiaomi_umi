@@ -86,61 +86,6 @@
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
     </string-array>
 
-    <!-- This setting is deprecated, please use
-         com.android.networkstack.tethering.R.array.config_tether_bluetooth_regexs instead. -->
-    <string-array name="config_tether_bluetooth_regexs">
-        <item>bnep\\d</item>
-        <item>bt-pan</item>
-    </string-array>
-
-    <!-- This setting is deprecated, please use
-         com.android.networkstack.tethering.R.array.config_dhcp_range instead. -->
-    <string-array name="config_tether_dhcp_range">
-        <item>192.168.42.2</item>
-        <item>192.168.42.254</item>
-        <item>192.168.43.2</item>
-        <item>192.168.43.254</item>
-        <item>192.168.44.2</item>
-        <item>192.168.44.254</item>
-        <item>192.168.45.2</item>
-        <item>192.168.45.254</item>
-        <item>192.168.46.2</item>
-        <item>192.168.46.254</item>
-        <item>192.168.47.2</item>
-        <item>192.168.47.254</item>
-        <item>192.168.48.2</item>
-        <item>192.168.48.254</item>
-        <item>192.168.49.2</item>
-        <item>192.168.49.254</item>
-        <item>192.168.50.2</item>
-        <item>192.168.50.254</item>
-        <item>192.168.51.2</item>
-        <item>192.168.51.254</item>
-    </string-array>
-
-    <!-- This setting is deprecated, please use
-         com.android.networkstack.tethering.R.array.config_tether_upstream_types. -->
-    <integer-array name="config_tether_upstream_types">
-        <item>0</item>
-        <item>1</item>
-        <item>5</item>
-        <item>7</item>
-    </integer-array>
-
-    <!-- This setting is deprecated, please use
-         com.android.networkstack.tethering.R.array.config_tether_usb_regexs instead. -->
-    <string-array name="config_tether_usb_regexs">
-        <item>usb\\d</item>
-        <item>rndis\\d</item>
-    </string-array>
-
-    <!-- This setting is deprecated, please use
-         com.android.networkstack.tethering.R.array.config_tether_wifi_regexs instead. -->
-    <string-array name="config_tether_wifi_regexs">
-        <item>softap0</item>
-        <item>wlan0</item>
-    </string-array>
-
     <!-- This string array should be overridden by the device to present a list of network
          attributes.  This is used by the connectivity manager to decide which networks can coexist
          based on the hardware -->

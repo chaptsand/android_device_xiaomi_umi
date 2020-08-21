@@ -304,6 +304,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     SystemUIResCommon \
     TelephonyResCommon \
+    TetheringResCommon \
     UmiFrameworks \
     UmiSystemUI \
     WifiResCommon \
