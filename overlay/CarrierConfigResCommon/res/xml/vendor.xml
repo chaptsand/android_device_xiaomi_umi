@@ -2,10 +2,10 @@
 <carrier_config_list>
     <carrier_config>
         <boolean name="apn_expand_bool" value="true" />
-        <boolean name="world_phone_bool" value="true" />
+        <boolean name="world_phone_bool" value="false" />
         <boolean name="allow_adding_apns_bool" value="true" />
         <boolean name="hide_preferred_network_type_bool" value="false" />
-        <boolean name="show_cdma_choices_bool" value="true" />
+        <boolean name="show_cdma_choices_bool" value="false" />
         <boolean name="allow_video_call_in_low_battery" value="true" />
         <boolean name="config_enable_display_14digit_imei" value="false" />
         <boolean name="video_call_use_ext" value="true" />

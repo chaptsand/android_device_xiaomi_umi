@@ -24,10 +24,6 @@
          the com.android.internal.telephony.Phone interface (false). -->
     <bool name="send_mic_mute_to_AudioManager">true</bool>
 
-    <!-- Flag indicating if the phone is a world phone -->
-    <!-- DEPRECATED: Use CarrierConfigManager#KEY_WORLD_PHONE_BOOL -->
-    <bool name="world_phone">true</bool>
-
     <!-- Determine whether we should show the "listen for instructions" screen after
          successfully placing the OTA call -->
     <integer name="OtaShowListeningScreen">1</integer>
