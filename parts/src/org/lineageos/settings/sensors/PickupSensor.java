@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
- *               2017-2018 The LineageOS Project
+ *               2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.doze;
+package org.lineageos.settings.sensors;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -24,6 +24,8 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.SystemClock;
 import android.util.Log;
+
+import org.lineageos.settings.doze.DozeUtils;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -46,7 +48,7 @@ public class PickupSensor implements SensorEventListener {
     public PickupSensor(Context context) {
         mContext = context;
         mSensorManager = mContext.getSystemService(SensorManager.class);
-        mSensor = DozeUtils.getSensor(mSensorManager, "xiaomi.sensor.pickup");
+        mSensor = SensorsUtils.getSensor(mSensorManager, "xiaomi.sensor.pickup");
         mExecutorService = Executors.newSingleThreadExecutor();
     }
 
@@ -75,7 +77,7 @@ public class PickupSensor implements SensorEventListener {
         /* Empty */
     }
 
-    protected void enable() {
+    public void enable() {
         if (DEBUG) Log.d(TAG, "Enabling");
         submit(() -> {
             mSensorManager.registerListener(this, mSensor,
@@ -84,7 +86,7 @@ public class PickupSensor implements SensorEventListener {
         });
     }
 
-    protected void disable() {
+    public void disable() {
         if (DEBUG) Log.d(TAG, "Disabling");
         submit(() -> {
             mSensorManager.unregisterListener(this, mSensor);

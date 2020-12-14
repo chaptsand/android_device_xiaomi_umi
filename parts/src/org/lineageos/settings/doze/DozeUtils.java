@@ -20,8 +20,6 @@ package org.lineageos.settings.doze;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
 import android.hardware.display.AmbientDisplayConfiguration;
 import android.os.UserHandle;
 import android.provider.Settings;
@@ -85,7 +83,7 @@ public final class DozeUtils {
                 DOZE_ENABLED, 1) != 0;
     }
 
-    protected static void launchDozePulse(Context context) {
+    public static void launchDozePulse(Context context) {
         if (DEBUG) Log.d(TAG, "Launch doze pulse");
         context.sendBroadcastAsUser(new Intent(DOZE_INTENT),
                 new UserHandle(UserHandle.USER_CURRENT));
@@ -114,29 +112,20 @@ public final class DozeUtils {
                 .getBoolean(gesture, false);
     }
 
-    protected static boolean isPickUpEnabled(Context context) {
+    public static boolean isPickUpEnabled(Context context) {
         return isGestureEnabled(context, GESTURE_PICK_UP_KEY);
     }
 
-    protected static boolean isHandwaveGestureEnabled(Context context) {
+    public static boolean isHandwaveGestureEnabled(Context context) {
         return isGestureEnabled(context, GESTURE_HAND_WAVE_KEY);
     }
 
-    protected static boolean isPocketGestureEnabled(Context context) {
+    public static boolean isPocketGestureEnabled(Context context) {
         return isGestureEnabled(context, GESTURE_POCKET_KEY);
     }
 
     public static boolean sensorsEnabled(Context context) {
         return isPickUpEnabled(context) || isHandwaveGestureEnabled(context)
                 || isPocketGestureEnabled(context);
-    }
-
-    protected static Sensor getSensor(SensorManager sm, String type) {
-        for (Sensor sensor : sm.getSensorList(Sensor.TYPE_ALL)) {
-            if (type.equals(sensor.getStringType())) {
-                return sensor;
-            }
-        }
-        return null;
     }
 }
