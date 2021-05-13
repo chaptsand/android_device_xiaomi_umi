@@ -11,6 +11,7 @@ cc_library_shared {
         "-Wall",
     ],
     shared_libs: [
+        "liblog",
         "libutils",
     ],
 }
