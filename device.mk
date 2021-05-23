@@ -31,7 +31,8 @@ PRODUCT_PACKAGES += \
     SystemUIResCommon \
     TelephonyResCommon \
     UmiFrameworks \
-    WifiResCommon \
+    UmiSystemUI \
+    WifiResCommon
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

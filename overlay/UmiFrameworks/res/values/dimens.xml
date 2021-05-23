@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">92px</dimen>
+    <dimen name="status_bar_height_landscape">24dp</dimen>
+
+</resources>
