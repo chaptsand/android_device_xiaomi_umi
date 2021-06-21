@@ -1,4 +1,3 @@
-libqti-perfd-client.so
 libadsprpc.so
 libcdsprpc.so
 libsdsprpc.so
