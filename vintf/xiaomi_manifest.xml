@@ -23,6 +23,16 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- Fingerprint -->
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.fingerprintextension</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IXiaomiFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Sensors -->
     <hal format="hidl">
         <name>android.hardware.sensors</name>
