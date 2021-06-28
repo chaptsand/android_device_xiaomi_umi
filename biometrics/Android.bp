@@ -1,15 +1,13 @@
 cc_binary {
     name: "android.hardware.biometrics.fingerprint@2.1-service.umi",
     defaults: ["hidl_defaults"],
+    relative_install_path: "hw",
     init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.umi.rc"],
     vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.umi.xml"],
-    vendor: true,
-    relative_install_path: "hw",
     srcs: [
         "BiometricsFingerprint.cpp",
         "service.cpp",
     ],
-
     shared_libs: [
         "libcutils",
         "liblog",
@@ -18,5 +16,5 @@ cc_binary {
         "libutils",
         "android.hardware.biometrics.fingerprint@2.1",
     ],
-
+    vendor: true,
 }
