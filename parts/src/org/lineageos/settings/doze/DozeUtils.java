@@ -20,12 +20,13 @@ package org.lineageos.settings.doze;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.hardware.display.AmbientDisplayConfiguration;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+import android.hardware.display.AmbientDisplayConfiguration;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
+
 import androidx.preference.PreferenceManager;
 
 import static android.provider.Settings.Secure.DOZE_ALWAYS_ON;
@@ -33,19 +34,15 @@ import static android.provider.Settings.Secure.DOZE_ENABLED;
 
 public final class DozeUtils {
 
-    private static final String TAG = "DozeUtils";
-    private static final boolean DEBUG = false;
-
-    private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
-
     protected static final String ALWAYS_ON_DISPLAY = "always_on_display";
-
     protected static final String CATEG_PICKUP_SENSOR = "pickup_sensor";
     protected static final String CATEG_PROX_SENSOR = "proximity_sensor";
-
     protected static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
     protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
+    private static final String TAG = "DozeUtils";
+    private static final boolean DEBUG = false;
+    private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
     public static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
