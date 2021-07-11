@@ -183,6 +183,10 @@ vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
+# Bluetooth (aptX) - form redfin
+system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
+system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+
 # Camera
 vendor/lib64/camera/com.qti.actuator.umi_dw9800_ov16e10.so
 vendor/lib64/camera/com.qti.actuator.umi_gc021m1_macro_dw9714.so
