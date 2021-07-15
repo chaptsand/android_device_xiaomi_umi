@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The Linux Foundation 
+     SPDX-License-Identifier: BSD-3-Clause
+-->
+<resources>
+
+    <!-- If Voice Radio Technology is RIL_RADIO_TECHNOLOGY_LTE:14 or
+         RIL_RADIO_TECHNOLOGY_UNKNOWN:0 this is the value that should be used instead.
+         A configuration value of RIL_RADIO_TECHNOLOGY_UNKNOWN:0 means
+         there is no replacement value and that the default assumption
+         for phone type (GSM) should be used. -->
+    <integer name="config_volte_replacement_rat">3</integer>
+
+</resources>

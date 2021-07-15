@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The Linux Foundation 
+     SPDX-License-Identifier: BSD-3-Clause
+-->
+<resources>
+
+    <!-- Tiles to auto add to Quick Settings upon first change of a given secure setting.
+         The syntax is setting-name:spec. If the tile is a TileService, the spec should be specified
+         as custom(package/class). Relative class name is supported. -->
+    <string-array name="config_quickSettingsAutoAdd">
+        <item>accessibility_display_inversion_enabled:inversion</item>
+        <item>wind_down_first_time_setup:custom(com.google.android.apps.wellbeing/.screen.ui.GrayscaleTileService)</item>
+        <item>focus_mode_first_time_setup:custom(com.google.android.apps.wellbeing/.focusmode.quicksettings.FocusModeTileService)</item>
+    </string-array>
+
+    <!-- Doze: does this device support STATE_DOZE?  -->
+    <bool name="doze_display_state_supported">true</bool>
+
+</resources>
