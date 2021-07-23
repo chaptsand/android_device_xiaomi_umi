@@ -85,6 +85,7 @@ TARGET_USES_HWC2 := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Fingerprint
+TARGET_USES_FOD_ZPOS := true
 TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension
 
 # HIDL
