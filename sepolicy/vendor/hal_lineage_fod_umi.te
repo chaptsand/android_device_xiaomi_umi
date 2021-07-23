@@ -12,3 +12,5 @@ binder_call(hal_lineage_fod_umi, hal_touchfeature_default)
 
 allow hal_lineage_fod_umi vendor_sysfs_graphics:dir search;
 allow hal_lineage_fod_umi vendor_sysfs_graphics:file rw_file_perms;
+
+allow hal_lineage_fod_umi sysfs_fod:file rw_file_perms;
