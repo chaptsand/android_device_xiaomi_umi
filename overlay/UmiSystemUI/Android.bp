@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "UmiSystemUI",
-    product_specific: true,
+    vendor: true,
 }
