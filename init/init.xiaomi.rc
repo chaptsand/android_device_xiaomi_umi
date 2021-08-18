@@ -1,0 +1,74 @@
+#
+# Copyright (C) 2021 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+import /vendor/etc/init/init.batterysecret.rc
+import /vendor/etc/init/init.mi_thermald.rc
+
+on init
+    chown system system /proc/last_kmsg
+
+    # Mipi Display feature
+    chmod 0777 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dynamic_dsi_clock
+
+    # Allow both charger and hal_light to access panel0 backlight
+    chown system system /sys/class/backlight/panel0-backlight/brightness
+
+on fs
+    mkdir /mnt/vendor/persist/audio 0755 system system
+    chmod 644 /mnt/vendor/persist/audio/us_manual_cal
+    mkdir /mnt/vendor/persist/haptics 0755 system system
+    chmod 0644 /mnt/vendor/persist/haptics/vov
+    chown system system /mnt/vendor/persist/haptics/vov
+    chown system system /sys/bus/i2c/drivers/aw8697_haptic/2-005a/vov
+    chmod 644 /mnt/vendor/persist/audio/us_manual_cal
+    mkdir /mnt/vendor/persist/subsys 0770 root system
+    chmod 0644 /dev/elliptic0
+    chmod 0644 /dev/elliptic1
+    chown system system /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/custom_wave
+    chmod 0666  /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/custom_wave
+
+on post-fs-data
+    chmod 0644 /dev/elliptic0
+    chmod 0644 /dev/elliptic1
+    chmod 0660 /dev/ir_spi
+    mkdir /data/vendor/mac_addr 0770 system wifi
+    chown system system /dev/ir_spi
+    mkdir /data/vendor/wlan_logs 0777 root shell
+    mkdir /data/vendor/nfc 0770 nfc nfc
+
+on boot
+    chown system system /sys/class/touch/touch_dev/palm_sensor
+    mkdir /mnt/vendor/persist/camera 0755 system cameraserver
+    chmod 0444 /sys/class/drm/card0-DSI-1/panel_info
+    chown system system /sys/class/drm/card0-DSI-1/panel_info
+
+on charger
+    mkdir /mnt/vendor/persist
+    chown root system /mnt/vendor/persist
+    chmod 0771 /mnt/vendor/persist
+    mkdir /mnt/vendor/persist/subsys 0770 root system
+    setprop sys.usb.config adb
+
+service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
+    override
+    class hal
+    user audioserver
+    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
+    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock
+    capabilities BLOCK_SUSPEND
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
+    socket audio_hw_socket seqpacket 0666 system system
+    onrestart restart audioserver
+
+service vendor.nv_mac /vendor/bin/nv_mac
+    class late_start
+    user system
+    group system inet net_admin wifi net_raw
+    oneshot
+
+on property:persist.vendor.sys.fp.fod.large_field=1
+    write sys/bus/i2c/devices/3-0049/fod_area 1
