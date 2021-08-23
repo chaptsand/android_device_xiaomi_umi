@@ -1,0 +1,24 @@
+# Charger
+ro.charger.enable_suspend=1
+
+# Display
+debug.sf.disable_backpressure=1
+debug.sf.enable_hwc_vds=1
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# Media
+mm.enable.smoothstreaming=true
+ro.media.recorder-max-base-layer-fps=60
+
+# RIL
+persist.vendor.radio.report_codec=1
+ril.subscription.types=NV,RUIM
+ro.telephony.default_network=33,33
+ro.vendor.radio.features_common=3
+
+# Vendor
+ro.vendor.qti.va_aosp.support=1
