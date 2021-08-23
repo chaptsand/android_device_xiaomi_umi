@@ -1,0 +1,4 @@
+allow system_server vendor_ir_spi_device:chr_file rw_file_perms;
+allow system_server proc_last_kmsg:file r_file_perms;
+
+get_prop(system_server, vendor_display_notch_prop)

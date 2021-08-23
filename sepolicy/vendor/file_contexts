@@ -1,0 +1,57 @@
+# Audio
+/dev/socket/audio_hw_socket                                 u:object_r:audio_socket:s0
+
+# Camera
+/mnt/vendor/persist/camera(/.*)?                            u:object_r:vendor_persist_camera_file:s0
+
+# Charger
+/vendor/bin/batterysecret                                   u:object_r:batterysecret_exec:s0
+
+# Devices
+/dev/xlog                                                   u:object_r:sound_device:s0
+/dev/ir_spi                                                 u:object_r:vendor_ir_spi_device:s0
+/dev/elliptic(.*)?                                          u:object_r:sound_device:s0
+
+# EFS
+/dev/block/sde[0-9]                                         u:object_r:efs_block_device:s0
+
+# Fingerprint devices
+/dev/goodix_fp                                              u:object_r:fingerprint_device:s0
+
+# Fingerprint data
+/data/vendor/fpc(/.*)?                                      u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?                                   u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/goodix(/.*)?                                   u:object_r:vendor_fingerprint_data_file:s0
+/mnt/vendor/persist/fpc(/.*)?                               u:object_r:vendor_fingerprint_data_file:s0
+/mnt/vendor/persist/goodix(/.*)?                            u:object_r:vendor_fingerprint_data_file:s0
+
+# Graphics nodes
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param        u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/hbm_status        u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info        u:object_r:vendor_sysfs_graphics:s0
+
+# Persist subsystem
+/mnt/vendor/persist/subsys(/.*)?                            u:object_r:persist_subsys_file:s0
+
+# Sensors
+/sys/bus/iio/devices                                                                                                                u:object_r:vendor_sysfs_iio:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:vadc@3100/iio:device1(/.*)?            u:object_r:vendor_sysfs_iio:s0
+
+# Touch
+/sys/devices/virtual/touch/touch_dev/palm_sensor            u:object_r:vendor_sysfs_tp_virtual_prox:s0
+/sys/devices/virtual/touch/touch_dev/partial_diff_data      u:object_r:sysfs_tp_partial_data:s0
+
+# USB
+/vendor/bin/init\.mi\.usb\.sh                               u:object_r:vendor_qti_init_shell_exec:s0
+
+# Wireless Charging Supply
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless   u:object_r:vendor_sysfs_battery_supply:s0
+
+# Wlan
+/vendor/bin/nv_mac                                          u:object_r:vendor_wcnss_service_exec:s0
+/data/vendor/mac_addr(/.*)?                                 u:object_r:vendor_wifi_vendor_data_file:s0
+/data/vendor/wlan_logs(/.*)?                                u:object_r:vendor_wifi_vendor_log_data_file:s0
+
+# Xiaomi thermal daemon
+/vendor/bin/mi_thermald                                     u:object_r:mi_thermald_exec:s0
+/data/vendor/thermal(/.*)?                                  u:object_r:vendor_thermal_data_file:s0

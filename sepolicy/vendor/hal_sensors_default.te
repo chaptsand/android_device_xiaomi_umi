@@ -1,0 +1,23 @@
+# Allow connection to audio socket
+allow hal_sensors_default audio_socket:sock_file rw_file_perms;
+unix_socket_connect(hal_sensors_default, audio, hal_audio_default)
+
+# Allow Sensors hal to read and write to ultrasound device
+allow hal_sensors_default {
+  iio_device
+  sound_device
+}:chr_file rw_file_perms;
+
+# Allow Sensors hal to access iio sysfs
+r_dir_file(hal_sensors_default, vendor_sysfs_iio)
+allow hal_sensors_default vendor_sysfs_iio:file rw_file_perms;
+
+# Allow Sensors to call Audio
+binder_call(hal_sensors_default, hal_audio_default)
+
+# Allow Sensors hal to access files in vendor_sysfs_touch
+r_dir_file(hal_sensors_default, vendor_sysfs_touch)
+allow hal_sensors_default vendor_sysfs_touch:file rw_file_perms;
+
+# Allow Sensors hal to read and write to virtual touchpanel sysfs
+allow hal_sensors_default vendor_sysfs_tp_virtual_prox:file rw_file_perms;

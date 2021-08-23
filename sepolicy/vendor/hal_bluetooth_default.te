@@ -1,0 +1,3 @@
+# Allow Bluetooth hal to dump logs in /data/vendor/ssrdump/
+allow hal_bluetooth_default vendor_ramdump_vendor_data_file:dir create_dir_perms;
+allow hal_bluetooth_default vendor_ramdump_vendor_data_file:file create_file_perms;

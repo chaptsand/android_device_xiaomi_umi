@@ -1,0 +1,24 @@
+# Cirrus
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value                  u:object_r:sysfs_f0_value:s0
+
+# Fingerprint
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/device_prepare                u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/fingerdown_wait               u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/irq                           u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/power_cfg                     u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/request_vreg                  u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup_enable                 u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/vendor                        u:object_r:vendor_sysfs_fingerprint:s0
+
+# Power_supply
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0066/power_supply/bq2597x-standalone                                         u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-0055/power_supply/lionsemi                                                   u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-0061/power_supply/rx1619                                                     u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify                                                      u:object_r:vendor_sysfs_battery_supply:s0
+
+# Touch
+genfscon sysfs /touchpanel                                                              u:object_r:sysfs_touchpanel:s0
+genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-3/3-0049                            u:object_r:vendor_sysfs_touch:s0
+
+# Wireless Charging Supply
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless u:object_r:vendor_sysfs_battery_supply:s0

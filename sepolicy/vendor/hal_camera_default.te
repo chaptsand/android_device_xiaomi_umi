@@ -1,0 +1,22 @@
+# Allow hal_camera_default to read and write to vendor_persist_camera_file
+allow hal_camera_default vendor_persist_camera_file:dir rw_dir_perms;
+allow hal_camera_default vendor_persist_camera_file:{
+  file
+  lnk_file
+} rw_file_perms;
+
+# Allow hal_camera_default to read and write to mnt/vendor/
+allow hal_camera_default mnt_vendor_file:dir rw_dir_perms;
+allow hal_camera_default mnt_vendor_file:{
+  file
+  lnk_file
+} rw_file_perms;
+
+# Allow hal_camera_default to read in vendor_persist_sensors_file
+r_dir_file(hal_camera_default, vendor_persist_sensors_file)
+
+# Allow hal_camera_default to read in vendor_sysfs_kgsl
+r_dir_file(hal_camera_default, vendor_sysfs_kgsl)
+
+# Allow hal_camera_default to read proc_stat files
+allow hal_camera_default proc_stat:file r_file_perms;
