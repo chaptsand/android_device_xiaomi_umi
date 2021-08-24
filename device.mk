@@ -126,7 +126,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
+    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor \
+    vendor.xiaomi.hardware.touchfeature@1.0.vendor
 
 # Bluetooth
 PRODUCT_PACKAGES += \

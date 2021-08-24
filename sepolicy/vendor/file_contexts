@@ -11,6 +11,7 @@
 /dev/xlog                                                   u:object_r:sound_device:s0
 /dev/ir_spi                                                 u:object_r:vendor_ir_spi_device:s0
 /dev/elliptic(.*)?                                          u:object_r:sound_device:s0
+/dev/xiaomi-touch                                           u:object_r:touchfeature_device:s0
 
 # EFS
 /dev/block/sde[0-9]                                         u:object_r:efs_block_device:s0
@@ -33,6 +34,9 @@
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param        u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/hbm_status        u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info        u:object_r:vendor_sysfs_graphics:s0
+
+# Hals
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service       u:object_r:hal_touchfeature_default_exec:s0
 
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                            u:object_r:persist_subsys_file:s0

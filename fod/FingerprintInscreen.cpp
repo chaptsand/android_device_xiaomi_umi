@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,9 +30,7 @@
 #define DISPPARAM_FOD_HBM_ON "0x20000"
 #define DISPPARAM_FOD_HBM_OFF "0xE0000"
 
-#define FOD_STATUS_PATH "/sys/devices/virtual/touch/tp_dev/fod_status"
-#define FOD_STATUS_ON 1
-#define FOD_STATUS_OFF 0
+#define TOUCH_FOD_ENABLE 10
 
 #define FOD_SENSOR_X 439
 #define FOD_SENSOR_Y 1806
@@ -67,6 +65,7 @@ namespace V1_0 {
 namespace implementation {
 
 FingerprintInscreen::FingerprintInscreen() {
+    xiaomiTouchFeatureService = ITouchFeature::getService();
     xiaomiFingerprintService = IXiaomiFingerprint::getService();
 }
 
@@ -103,12 +102,12 @@ Return<void> FingerprintInscreen::onRelease() {
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
-    set(FOD_STATUS_PATH, FOD_STATUS_ON);
+    xiaomiTouchFeatureService->setTouchMode(TOUCH_FOD_ENABLE, 1);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
-    set(FOD_STATUS_PATH, FOD_STATUS_OFF);
+    xiaomiTouchFeatureService->resetTouchMode(TOUCH_FOD_ENABLE);
     return Void();
 }
 
