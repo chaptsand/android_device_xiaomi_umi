@@ -1445,6 +1445,7 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Touchfeature
+vendor/bin/toucheventcheck
 vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service
 vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc
 vendor/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so
