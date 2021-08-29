@@ -176,7 +176,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
-TARGET_USES_INTERACTION_BOOST := true
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
