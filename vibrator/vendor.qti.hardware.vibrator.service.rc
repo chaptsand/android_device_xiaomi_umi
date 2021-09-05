@@ -1,4 +1,4 @@
-service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service
+service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service.xiaomi_umi
     class hal
     user system
     group system input
