@@ -54,20 +54,9 @@ private:
     int16_t mCurrMagnitude;
 };
 
-class LedVibratorDevice {
-public:
-    LedVibratorDevice();
-    int on(int32_t timeoutMs);
-    int off();
-    bool mDetected;
-private:
-    int write_value(const char *file, const char *value);
-};
-
 class Vibrator : public BnVibrator {
 public:
     class InputFFDevice ff;
-    class LedVibratorDevice ledVib;
     ndk::ScopedAStatus getCapabilities(int32_t* _aidl_return) override;
     ndk::ScopedAStatus off() override;
     ndk::ScopedAStatus on(int32_t timeoutMs,
