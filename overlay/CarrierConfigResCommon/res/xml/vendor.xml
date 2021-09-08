@@ -40,6 +40,8 @@
         <boolean name="carrier_call_composer_supported_bool" value="false" />
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true" />
         <long name="carrier_data_call_apn_retry_after_disconnect_long" value="100" />
+        <boolean name="dtmf_type_enabled_bool" value="true" />
+        <boolean name="csp_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="001" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
