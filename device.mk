@@ -10,8 +10,15 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.class_main.sh \
+    init.mdm.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.sh \
     init.qti.dcvs.sh \
-    init.target.rc
+    init.target.rc\
+    ueventd.qcom.rc
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

@@ -12,6 +12,12 @@ prebuilt_etc {
     vendor: true,
 }
 
+sh_binary {
+    name: "init.mdm.sh",
+    src: "init.mdm.sh",
+    vendor: true,
+}
+
 prebuilt_etc {
     name: "init.target.rc",
     src: "init.target.rc",
@@ -22,5 +28,36 @@ prebuilt_etc {
 sh_binary {
     name: "init.qti.dcvs.sh",
     src: "init.qti.dcvs.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.qcom.rc",
+    src: "init.qcom.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.class_main.sh",
+    src: "init.class_main.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.early_boot.sh",
+    src: "init.qcom.early_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.post_boot.sh",
+    src: "init.qcom.post_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.sh",
+    src: "init.qcom.sh",
     vendor: true,
 }
