@@ -9,4 +9,13 @@
     <dimen name="status_bar_height_portrait">92px</dimen>
     <dimen name="status_bar_height_landscape">24dp</dimen>
 
+    <!-- Default radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">156px</dimen>
+
+    <!-- Default adjustment for the software rounded corners since corners are not perfectly
+        round. This value is used when retrieving the "radius" of the rounded corner in cases
+        where the exact bezier curve cannot be retrieved.  This value will be subtracted from
+        rounded_corner_radius to more accurately provide a "radius" for the rounded corner. -->
+    <dimen name="rounded_corner_radius_adjustment">54px</dimen>
+
 </resources>
