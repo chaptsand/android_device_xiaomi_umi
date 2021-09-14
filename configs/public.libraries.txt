@@ -1,0 +1,8 @@
+libnpu.so
+libhta_hexagon_runtime.so
+libqti-perfd-client.so
+libadsprpc.so
+libcdsprpc.so
+libsdsprpc.so
+liblistensoundmodel2.so
+libOpenCL.so
