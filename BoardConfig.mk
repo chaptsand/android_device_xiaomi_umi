@@ -77,6 +77,13 @@ TARGET_USES_HWC2 := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
+# HIDL
+DEVICE_MANIFEST_FILE := \
+    $(DEVICE_PATH)/vintf/manifest.xml
+
+DEVICE_MATRIX_FILE := \
+    $(DEVICE_PATH)/vintf/compatibility_matrix.xml
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
