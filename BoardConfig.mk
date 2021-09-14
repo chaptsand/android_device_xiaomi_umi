@@ -51,6 +51,10 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
