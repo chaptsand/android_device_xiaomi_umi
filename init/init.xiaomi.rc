@@ -44,6 +44,7 @@ on boot
     mkdir /mnt/vendor/persist/camera 0755 system cameraserver
     chmod 0444 /sys/class/drm/card0-DSI-1/panel_info
     chown system system /sys/class/drm/card0-DSI-1/panel_info
+    chown system system /sys/touchpanel/double_tap
 
 on charger
     mkdir /mnt/vendor/persist
