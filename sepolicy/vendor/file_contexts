@@ -37,6 +37,8 @@
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param        u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/hbm_status        u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info        u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/dynamic_fps       u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/smart_fps_value   u:object_r:vendor_sysfs_graphics:s0
 
 # Hals
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service       u:object_r:hal_touchfeature_default_exec:s0
