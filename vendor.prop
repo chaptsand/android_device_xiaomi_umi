@@ -134,6 +134,8 @@ vendor.display.disable_scaler=0
 vendor.display.enable_async_powermode=0
 vendor.display.enable_optimize_refresh=1
 vendor.display.enable_posted_start_dyn=1
+vendor.display.qdcm.disable_factory_mode=1
+vendor.display.qdcm.mode_combine=1
 vendor.display.use_smooth_motion=0
 
 # DPM
@@ -165,6 +167,7 @@ persist.demo.hdmirotationlock=false
 persist.sys.force_sw_gles=1
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=2
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.kona.api30
