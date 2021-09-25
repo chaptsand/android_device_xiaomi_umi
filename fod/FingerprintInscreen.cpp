@@ -45,10 +45,6 @@ using ::android::base::WriteStringToFile;
 #define FOD_SENSOR_Y 1806
 #define FOD_SENSOR_SIZE 197
 
-namespace {
-
-} // anonymous namespace
-
 namespace vendor {
 namespace lineage {
 namespace biometrics {
