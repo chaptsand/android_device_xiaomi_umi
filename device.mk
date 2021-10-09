@@ -210,7 +210,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.class_main.sh \
     init.mdm.sh \
     init.mi.usb.sh \
     init.qcom.early_boot.sh \
