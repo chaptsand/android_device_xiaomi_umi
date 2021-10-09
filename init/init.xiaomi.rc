@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-import /vendor/etc/init/init.batterysecret.rc
-import /vendor/etc/init/init.mi_thermald.rc
-
 on init
     chown system system /proc/last_kmsg
 
