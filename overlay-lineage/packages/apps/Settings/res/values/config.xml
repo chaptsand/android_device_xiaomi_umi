@@ -5,17 +5,6 @@
 -->
 <resources>
 
-    <!-- Defines the location of the fingerprint sensor on the device:
-         0 = Back
-         1 = Front
-         2 = Left
-         3 = Right
-    -->
-    <integer name="config_fingerprintSensorLocation">1</integer>
-
-    <!-- Whether to show min refresh rate in display settings. -->
-    <bool name="config_show_min_refresh_rate_switch">true</bool>
-
     <!-- Whether or not the device is capable of multiple levels of vibration intensity.
          Note that this is different from whether it can control the vibration amplitude as some
          devices will be able to vary their amplitude but do not possess enough dynamic range to
