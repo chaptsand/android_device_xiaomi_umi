@@ -1,9 +1,6 @@
 # Camera
-camera.                                     u:object_r:vendor_camera_prop:s0
 persist.camera.                             u:object_r:vendor_camera_prop:s0
-ro.camera.res.fmq.size                      u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.                           u:object_r:vendor_camera_prop:s0
-ro.camera.                                  u:object_r:vendor_camera_prop:s0
 vendor.camera.sensor.                       u:object_r:vendor_camera_sensor_prop:s0
 vendor.camera.boot_complete                 u:object_r:vendor_camera_prop:s0
 
@@ -16,14 +13,8 @@ vendor.fps_hal.                             u:object_r:vendor_fp_prop:s0
 # Mlipay
 persist.vendor.sys.pay.ifaa                 u:object_r:vendor_payment_security_prop:s0
 
-# Sensors
-invn.hal.                                   u:object_r:vendor_sensors_prop:s0
-persist.sensor.sardisable                   u:object_r:vendor_sensors_prop:s0
-
 # Thermal
-sys.thermal.                                u:object_r:thermal_normal_prop:s0
 vendor.sys.thermal.                         u:object_r:thermal_normal_prop:s0
-persist.sys.thermal.config                  u:object_r:thermal_normal_prop:s0
 
 # Touchfeature
 ro.vendor.touchfeature.type                 u:object_r:vendor_touchfeature_prop:s0
