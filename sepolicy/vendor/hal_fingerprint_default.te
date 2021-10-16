@@ -10,6 +10,7 @@ allow hal_fingerprint_default {
   fingerprint_device
   input_device
   tee_device
+  touchfeature_device
   uhid_device
 }: chr_file rw_file_perms;
 
