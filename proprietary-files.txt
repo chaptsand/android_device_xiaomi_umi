@@ -960,7 +960,6 @@ vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libperfioctl.so
