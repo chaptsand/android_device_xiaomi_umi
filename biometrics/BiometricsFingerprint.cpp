@@ -25,6 +25,14 @@
 #include <inttypes.h>
 #include <unistd.h>
 
+#define FOD_STATUS_ON 1
+#define FOD_STATUS_OFF -1
+
+#define TOUCH_DEV_PATH "/dev/xiaomi-touch"
+#define Touch_Fod_Enable 10
+#define TOUCH_MAGIC 0x5400
+#define TOUCH_IOC_SETMODE TOUCH_MAGIC + 0
+
 namespace android {
 namespace hardware {
 namespace biometrics {
@@ -57,6 +65,7 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
             break;
         }
     }
+    touch_fd_ = android::base::unique_fd(open(TOUCH_DEV_PATH, O_RDWR));
 }
 
 BiometricsFingerprint::~BiometricsFingerprint() {
@@ -79,10 +88,14 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 }
 
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
+    int arg[2] = {Touch_Fod_Enable, FOD_STATUS_ON};
+    ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
+    int arg[2] = {Touch_Fod_Enable, FOD_STATUS_OFF};
+    ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
     return Void();
 }
 
