@@ -13,4 +13,7 @@
         M122,0 C71.76,3.59 52.03,8.07 29.6,29.6 8.07,52.03 3.59,71.76 0,122
     </string>
 
+    <!-- The radius of the enrollment progress bar, in dp -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">104</integer>
+
 </resources>

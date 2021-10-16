@@ -5,7 +5,13 @@
 -->
 <resources>
 
-    <!-- Color of the FOD view -->
-    <color name="config_fodColor">#00ffffff</color>
+    <!-- Color of the UDFPS pressed view -->
+    <color name="config_udfpsColor">#00ffffff</color>
+
+    <!-- HBM type of UDFPS overlay.
+            0 - GLOBAL HBM
+            1 - LOCAL HBM
+    -->
+    <integer name="config_udfpsHbmType">0</integer>
 
 </resources>
