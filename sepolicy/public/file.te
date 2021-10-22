@@ -1,0 +1,1 @@
+type dummy_type_meant_to_prevent_selinux_compilation_from_failing_when_system_ext_public_dir_has_nothing_but_attributes;
