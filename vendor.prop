@@ -257,7 +257,3 @@ ro.soc.model=SM8250
 
 # Time
 persist.timed.enable=true
-
-# WiFi Display
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0

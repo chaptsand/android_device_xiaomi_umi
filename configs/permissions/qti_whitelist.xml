@@ -108,8 +108,6 @@
     <hidden-api-whitelisted-app package="org.codeaurora.bluetooth" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.qmmi" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.perfdump" />
-    <hidden-api-whitelisted-app package="com.qualcomm.wfd.client" />
-    <hidden-api-whitelisted-app package="com.qualcomm.wfd.service" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.server.wigigapp" />
     <hidden-api-whitelisted-app package="com.qti.service.colorservice" />
     <!-- These are location components that need to freely run in the background -->
