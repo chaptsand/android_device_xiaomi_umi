@@ -6,8 +6,6 @@ type proc_last_kmsg, fs_type, proc_type;
 
 type sysfs_f0_value, sysfs_type, fs_type;
 
-type sysfs_fod, fs_type, sysfs_type;
-
 type sysfs_touchpanel, fs_type, sysfs_type;
 
 type sysfs_tp_partial_data, fs_type, sysfs_type;

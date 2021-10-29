@@ -18,10 +18,6 @@
 
 # Fingerprint
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service\.umi                              u:object_r:hal_fingerprint_default_exec:s0
-/vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1\.0-service\.xiaomi_umi              u:object_r:hal_lineage_fod_umi_exec:s0
-
-# Fingerprint - FOD
-/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui                                           u:object_r:sysfs_fod:s0
 
 # Fingerprint devices
 /dev/goodix_fp                                              u:object_r:fingerprint_device:s0
