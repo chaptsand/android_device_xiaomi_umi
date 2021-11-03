@@ -1,8 +1,43 @@
-libnpu.so
-libhta_hexagon_runtime.so
 libqti-perfd-client.so
 libadsprpc.so
 libcdsprpc.so
 libsdsprpc.so
+libfastcvopt.so
 liblistensoundmodel2.so
 libOpenCL.so
+libnpu.so
+libmialgoengine.so 64
+libmpbase.so 64
+libHalSuperSensorServer.so 64
+libSuperSensor.so 64
+libSuperSensorCPU.so 64
+libarcsoft_beautyshot.so 64
+libarcsoft_dualcam_refocus.so 64
+libarcsoft_dualcam_refocus_rear_t.so 64
+libarcsoft_dualcam_refocus_rear_w.so 64
+libarcsoft_dualcam_refocus_front.so 64
+libarcsoft_portrait_lighting.so 64
+libarcsoft_portrait_lighting_c.so 64
+libarcsoft_high_dynamic_range.so 64
+libmibokeh_855.so 64
+libmialgo_image_colourkeeping.so 64
+libarcsoft_distortion_correction.so 64
+libarcsoft_bodyslim.so 64
+libalCFR.so 64
+libcvp_common.so
+libalhLDC.so 64
+libalAILDC.so 64
+libarcsoft_superportrait.so 64
+libmialgo_ie_capture.so 64
+libmialgo_utils.so 64
+libxmi_high_dynamic_range.so 64
+libMIAIHDRhvx_interface.so 64
+libcvp2.so
+libcvp2_hfi.so
+libSNPE.so 64
+libsymphony-cpu.so 64
+libc++_shared.so 64
+libcamera_scene.so 64
+libsnpe_dsp_domains_v2.so 64
+libGLESv3.so
+libEGL.so
