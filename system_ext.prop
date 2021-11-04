@@ -18,12 +18,6 @@ bluetooth.profile.sap.server.enabled=true
 # Camera
 vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam
 
-# CNE
-persist.vendor.cne.feature=1
-
-# DPM
-persist.vendor.dpm.feature=1
-
 # GPS
 persist.sys.gps.fence=true
 persist.sys.gps.polaris=true
@@ -34,10 +28,6 @@ ro.media.recorder-max-base-layer-fps=60
 
 # NFC
 ro.nfc.port=I2C
-
-# Telephony
-ro.telephony.sim_slots.count=2
-telephony.active_modems.max_count=2
 
 # Time
 persist.timed.enable=true

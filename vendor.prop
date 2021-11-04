@@ -140,10 +140,8 @@ persist.vendor.qcomsysd.enabled=1
 persist.rcs.supported=0
 
 # RIL
-persist.radio.multisim.config=dsds
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.cdma_cap=false
-persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.dynamic_sar=1
@@ -151,12 +149,9 @@ persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.force_ltd_sys_ind=1
 persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.manual_nw_rej_ct=1
-persist.vendor.radio.procedure_bytes=SKIP
-persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
 ro.telephony.default_cdma_sub=0
 ro.vendor.radio.5g=3
-telephony.lteOnCdmaDevice=1
 
 # SoC
 ro.soc.manufacturer=QTI
