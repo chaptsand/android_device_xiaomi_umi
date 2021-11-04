@@ -162,6 +162,13 @@ $(call inherit-product, vendor/qcom/opensource/display/config/display-product-ve
 BOARD_DISPLAY_HAL := hardware/qcom-caf/sm8250/display
 TARGET_BOARD_PLATFORM := kona
 
+# Doze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.pickup=xiaomi.sensor.pickup
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
