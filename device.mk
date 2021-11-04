@@ -298,14 +298,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    CarrierConfigResCommon \
-    FrameworksResCommon \
-    SystemUIResCommon \
-    TelecommResCommon \
-    TelephonyResCommon \
-    WifiResCommon
-
-PRODUCT_PACKAGES += \
     AOSPAUmiFrameworks \
     AOSPAUmiSettings \
     AOSPAUmiSystemUI \
@@ -325,6 +317,7 @@ TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 TARGET_BOARD_PLATFORM := kona
 TARGET_COMMON_QTI_COMPONENTS := \
     display \
+    overlay \
     perf \
     telephony
 
