@@ -14,6 +14,9 @@ vendor.fps_hal.                             u:object_r:vendor_fingerprint_prop:s
 # Mlipay
 persist.vendor.sys.pay.ifaa                 u:object_r:vendor_payment_security_prop:s0
 
+# Power
+vendor.powerhal.                            u:object_r:vendor_power_prop:s0
+
 # Thermal
 vendor.sys.thermal.                         u:object_r:vendor_thermal_normal_prop:s0
 
