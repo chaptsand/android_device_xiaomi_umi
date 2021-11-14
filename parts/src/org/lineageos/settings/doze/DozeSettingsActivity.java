@@ -18,9 +18,10 @@
 package org.lineageos.settings.doze;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
 
-public class DozeSettingsActivity extends PreferenceActivity {
+public class DozeSettingsActivity extends CollapsingToolbarBaseActivity {
 
     private static final String TAG_DOZE = "doze";
 
@@ -28,7 +29,7 @@ public class DozeSettingsActivity extends PreferenceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getFragmentManager().beginTransaction().replace(android.R.id.content,
+        getFragmentManager().beginTransaction().replace(R.id.content_frame,
                 new DozeSettingsFragment(), TAG_DOZE).commit();
     }
 }
