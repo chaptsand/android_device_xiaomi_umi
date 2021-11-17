@@ -565,7 +565,6 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
 vendor/lib64/libhdr_tm.so
 
 # Display (SDM)
-vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libsdm-color.so
