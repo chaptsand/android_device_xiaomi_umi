@@ -263,6 +263,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     perf \
     telephony \
     usb \
+    vibrator \
     wlan
 
 # Sensors
@@ -292,13 +293,6 @@ PRODUCT_PACKAGES += \
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.xiaomi_umi
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # WiFi
 PRODUCT_COPY_FILES += \

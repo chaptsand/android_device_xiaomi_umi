@@ -62,9 +62,6 @@
 # USB
 /vendor/bin/init\.mi\.usb\.sh                               u:object_r:vendor_qti_init_shell_exec:s0
 
-# Vibrator
-/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_umi                                                                 u:object_r:hal_vibrator_default_exec:s0
-
 # Wlan
 /vendor/bin/nv_mac                                          u:object_r:vendor_wcnss_service_exec:s0
 /data/vendor/mac_addr(/.*)?                                 u:object_r:vendor_wifi_vendor_data_file:s0
