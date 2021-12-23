@@ -30,6 +30,12 @@ prebuilt_etc {
 }
 
 sh_binary {
+    name: "init.mi.btmac.sh",
+    src: "init.mi.btmac.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.mi.usb.sh",
     src: "init.mi.usb.sh",
     vendor: true,

@@ -1,3 +1,8 @@
 allow vendor_qti_init_shell sysfs_wakeup:file setattr;
 allow vendor_qti_init_shell configfs:dir rw_dir_perms;
 allow vendor_qti_init_shell configfs:file create_file_perms;
+
+# allow init.mi.btmac.sh to read hex-encoded mac address and set it
+allow vendor_qti_init_shell vendor_bluetooth_prop:property_service set;
+allow vendor_qti_init_shell vendor_wifi_vendor_data_file:dir search;
+allow vendor_qti_init_shell vendor_wifi_vendor_data_file:file r_file_perms;
