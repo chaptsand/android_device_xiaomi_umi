@@ -272,25 +272,27 @@
         <item>500</item>
     </integer-array>
 
+    <!-- The default intensity level for haptic feedback. See Settings.System.HAPTIC_FEEDBACK_INTENSITY
+         for more details on the constant values and meanings. -->
+    <integer name="config_defaultHapticFeedbackIntensity">3</integer>
+
     <!-- Vibrator pattern for feedback about a long screen/key press. -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>1</item>
-        <item>20</item>
-        <item>21</item>
+        <item>12</item>
+        <item>7</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key. -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
-        <item>10</item>
-        <item>20</item>
-        <item>30</item>
+        <item>12</item>
+        <item>7</item>
     </integer-array>
 
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap. -->
     <integer-array name="config_keyboardTapVibePattern">
-        <item>40</item>
+        <item>10</item>
     </integer-array>
 
     <!-- The bounding path of the cutout region of the main built-in display.
