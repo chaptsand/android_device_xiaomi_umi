@@ -36,8 +36,6 @@ libcvp2.so
 libcvp2_hfi.so
 libSNPE.so 64
 libsymphony-cpu.so 64
-libc++_shared.so 64
 libcamera_scene.so 64
 libsnpe_dsp_domains_v2.so 64
-libGLESv3.so
 libEGL.so
