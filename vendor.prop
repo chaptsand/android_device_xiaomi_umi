@@ -211,6 +211,9 @@ persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
+# PASR
+vendor.pasr.activemode.enabled=true
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
