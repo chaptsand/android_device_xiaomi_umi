@@ -38,12 +38,15 @@ on post-fs-data
     chown system system /dev/ir_spi
     mkdir /data/vendor/wlan_logs 0777 root shell
     mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/thermal 0771 root system
+    mkdir /data/vendor/thermal/config 0771 root system
 
 on boot
     chown system system /sys/class/touch/touch_dev/palm_sensor
     mkdir /mnt/vendor/persist/camera 0755 system cameraserver
     chmod 0444 /sys/class/drm/card0-DSI-1/panel_info
     chown system system /sys/class/drm/card0-DSI-1/panel_info
+    chown system system /sys/class/thermal/thermal_message/sconfig
     chown system system /sys/touchpanel/double_tap
 
 on charger
