@@ -5,9 +5,6 @@
 -->
 <resources>
 
-    <!-- for 18dp of padding at 2.75px/dp at default density -->
-    <dimen name="rounded_corner_content_padding">49.5px</dimen>
-
     <!-- The padding on the top of the statusbar (usually 0). -->
     <dimen name="status_bar_padding_top">8dp</dimen>
 

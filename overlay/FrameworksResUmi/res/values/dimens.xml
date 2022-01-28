@@ -12,6 +12,9 @@
     <dimen name="status_bar_height_landscape">28dp</dimen>
     <dimen name="status_bar_height_portrait">@dimen/status_bar_height_default</dimen>
 
+    <!-- Adjust the icon padding in status bar for rounded corners -->
+    <dimen name="rounded_corner_content_padding">49.5px</dimen>
+
     <!-- Default radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">128px</dimen>
 
