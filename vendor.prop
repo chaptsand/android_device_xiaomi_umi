@@ -251,6 +251,10 @@ ro.telephony.default_cdma_sub=0
 ro.vendor.radio.5g=3
 telephony.lteOnCdmaDevice=1
 
+# SoC
+ro.soc.manufacturer=QTI
+ro.soc.model=SM8250
+
 # Time
 persist.timed.enable=true
 
