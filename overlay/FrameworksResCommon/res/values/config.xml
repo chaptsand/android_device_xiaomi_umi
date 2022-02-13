@@ -323,8 +323,4 @@
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName">com.google.android.gms</string>
 
-    <!-- Enable overlays for location components. -->
-    <string name="config_comboNetworkLocationProvider">com.qualcomm.location</string>
-    <string name="config_networkLocationProviderPackageName">com.qualcomm.location</string>
-
 </resources>
