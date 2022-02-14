@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Linux Foundation
+     SPDX-License-Identifier: BSD-3-Clause
+-->
+<resources>
+
+    <!-- String indicating the package name of the device ImsService implementation for RCS. -->
+    <string name="config_ims_rcs_package">com.android.service.ims</string>
+
+</resources>

@@ -327,6 +327,7 @@ PRODUCT_PACKAGES += \
     TelephonyResCommon \
     UmiFrameworks \
     UmiSystemUI \
+    UmiTelephony \
     WifiResCommon \
     WifiResTarget
 
