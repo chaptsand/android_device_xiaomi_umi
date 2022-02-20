@@ -128,7 +128,6 @@ ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 
 # Crypto
-ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display
