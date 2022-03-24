@@ -297,6 +297,16 @@ on post-fs-data
     #Create the symlink to qcn wpa_supplicant folder for ar6000 wpa_supplicant
     #symlink /data/misc/wifi/wpa_supplicant /data/system/wpa_supplicant
 
+    #Create directories for Location services
+    mkdir /data/vendor/location 0770 gps gps
+    mkdir /data/vendor/location/mq 0770 gps gps
+    mkdir /data/vendor/location/xtwifi 0770 gps gps
+    mkdir /dev/socket/location 0770 gps gps
+    mkdir /dev/socket/location/mq 0770 gps gps
+    mkdir /dev/socket/location/xtra 0770 gps gps
+    mkdir /dev/socket/location/ehub 0770 gps gps
+    mkdir /dev/socket/location/dgnss 0770 gps gps
+
     #Create directories for wifihal services
     mkdir /dev/socket/wifihal 0770 wifi wifi
     chmod 2770 /dev/socket/wifihal
@@ -645,6 +655,11 @@ service mlid /vendor/bin/mlid
     user gps
     group gps
     socket mlid stream 0666 gps gps
+
+service loc_launcher /vendor/bin/loc_launcher
+    class late_start
+    user gps
+    group gps
 
 service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
