@@ -23,6 +23,7 @@
 #include "xiaomi_fingerprint.h"
 #include "BiometricsFingerprint.h"
 
+#include <fstream>
 #include <inttypes.h>
 #include <poll.h>
 #include <thread>
@@ -31,6 +32,9 @@
 #define COMMAND_NIT 10
 #define PARAM_NIT_FOD 1
 #define PARAM_NIT_NONE 0
+
+#define DISPPARAM_PATH "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param"
+#define DISPPARAM_FOD_HBM_OFF "0xE0000"
 
 #define FOD_STATUS_ON 1
 #define FOD_STATUS_OFF -1
@@ -41,6 +45,16 @@
 #define TOUCH_IOC_SETMODE TOUCH_MAGIC + 0
 
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
+
+namespace {
+
+template <typename T>
+static void set(const std::string& path, const T& value) {
+    std::ofstream file(path);
+    file << value;
+}
+
+} // anonymous namespace
 
 namespace android {
 namespace hardware {
@@ -146,8 +160,7 @@ Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, floa
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
-    int arg[2] = {Touch_Fod_Enable, FOD_STATUS_OFF};
-    ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
+    set(DISPPARAM_PATH, DISPPARAM_FOD_HBM_OFF);
     return Void();
 }
 
