@@ -38,6 +38,9 @@ on boot
     chmod 0700 /sys/class/drm/card0-DSI-1/panel_info
     chmod 0666 /dev/input/event2
 
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui
+    chmod 0444 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui
+
 on post-fs-data
     mkdir /data/vendor/fpc 0770 system system
     mkdir /data/vendor/goodix 0770 system system

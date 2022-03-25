@@ -17,13 +17,20 @@
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.umi"
 #define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.umi"
 
+#include <android-base/logging.h>
 #include <hardware/hw_auth_token.h>
 
 #include "xiaomi_fingerprint.h"
 #include "BiometricsFingerprint.h"
 
 #include <inttypes.h>
+#include <poll.h>
+#include <thread>
 #include <unistd.h>
+
+#define COMMAND_NIT 10
+#define PARAM_NIT_FOD 1
+#define PARAM_NIT_NONE 0
 
 #define FOD_STATUS_ON 1
 #define FOD_STATUS_OFF -1
@@ -32,6 +39,8 @@
 #define Touch_Fod_Enable 10
 #define TOUCH_MAGIC 0x5400
 #define TOUCH_IOC_SETMODE TOUCH_MAGIC + 0
+
+#define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
 
 namespace android {
 namespace hardware {
@@ -54,6 +63,25 @@ using RequestStatus =
 
 BiometricsFingerprint *BiometricsFingerprint::sInstance = nullptr;
 
+static bool readBool(int fd) {
+    char c;
+    int rc;
+
+    rc = lseek(fd, 0, SEEK_SET);
+    if (rc) {
+        LOG(ERROR) << "failed to seek fd, err: " << rc;
+        return false;
+    }
+
+    rc = read(fd, &c, sizeof(char));
+    if (rc != 1) {
+        LOG(ERROR) << "failed to read bool from fd, err: " << rc;
+        return false;
+    }
+
+    return c != '0';
+}
+
 BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevice(nullptr) {
     sInstance = this; // keep track of the most recent instance
     for (const auto& class_name : kHALClasses) {
@@ -66,6 +94,30 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
         }
     }
     touch_fd_ = android::base::unique_fd(open(TOUCH_DEV_PATH, O_RDWR));
+
+    std::thread([this]() {
+        int fd = open(FOD_UI_PATH, O_RDONLY);
+        if (fd < 0) {
+            LOG(ERROR) << "failed to open fd, err: " << fd;
+            return;
+        }
+
+        struct pollfd fodUiPoll = {
+            .fd = fd,
+            .events = POLLERR | POLLPRI,
+            .revents = 0,
+        };
+
+        while (true) {
+            int rc = poll(&fodUiPoll, 1, -1);
+            if (rc < 0) {
+                LOG(ERROR) << "failed to poll fd, err: " << rc;
+                continue;
+            }
+
+            extCmd(COMMAND_NIT, readBool(fd) ? PARAM_NIT_FOD : PARAM_NIT_NONE);
+        }
+    }).detach();
 }
 
 BiometricsFingerprint::~BiometricsFingerprint() {
