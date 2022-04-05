@@ -118,32 +118,11 @@ persist.camera.gyro.disable=0
 # CNE
 persist.vendor.cne.feature=1
 
-# ConfigStore
-ro.surface_flinger.has_wide_color_display=true
-ro.surface_flinger.has_HDR_display=true
-ro.surface_flinger.use_color_management=true
-ro.surface_flinger.wcg_composition_dataspace=143261696
-ro.surface_flinger.protected_contents=true
-ro.surface_flinger.set_touch_timer_ms=200
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display
 ro.vendor.display.sensortype=2
-vendor.display.comp_mask=2
-vendor.display.disable_excl_rect_partial_fb=1
-vendor.display.disable_excl_rect=0
-vendor.display.disable_hw_recovery_dump=1
-vendor.display.disable_offline_rotator=1
-vendor.display.disable_scaler=0
-vendor.display.enable_async_powermode=0
-vendor.display.enable_optimize_refresh=1
-vendor.display.enable_posted_start_dyn=1
-vendor.display.qdcm.disable_factory_mode=1
-vendor.display.qdcm.mode_combine=1
-vendor.display.use_smooth_motion=0
 
 # DPM
 persist.vendor.dpm.feature=1
@@ -161,25 +140,11 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
-debug.egl.hw=0
-debug.sf.enable_advanced_sf_phase_offset=1
-debug.sf.enable_gl_backpressure=1
-debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
-debug.sf.high_fps_early_phase_offset_ns=-4000000
-debug.sf.high_fps_late_app_phase_offset_ns=1000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
-debug.sf.hw=0
-debug.sf.latch_unsignaled=1
-persist.demo.hdmirotationlock=false
-persist.sys.force_sw_gles=1
-persist.sys.sf.color_mode=0
-persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.kona.api30
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
-ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.kona.api30
 ro.opengles.version=196610
-vendor.gralloc.disable_ubwc=0
 
 # Keystore
 ro.hardware.keystore_desede=true
