@@ -4,10 +4,6 @@ persist.vendor.camera.privapp.list=com.android.camera
 # Charger
 ro.charger.enable_suspend=1
 
-# Display
-debug.sf.disable_backpressure=1
-debug.sf.enable_hwc_vds=1
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
