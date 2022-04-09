@@ -1,0 +1,2 @@
+user=_app seinfo=platform name=org.ifaa.aidl.manager domain=mlipay_app levelFrom=all
+user=_app seinfo=platform name=com.tencent.soter.soterserver domain=mlipay_app levelFrom=all

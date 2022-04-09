@@ -1,0 +1,18 @@
+type mlipay_app, domain;
+app_domain(mlipay_app)
+
+# Allow hwbinder call from app to server
+binder_call(mlipay_app, hal_mlipay_server)
+binder_call(mlipay_app, vendor_hal_soter_qti)
+
+# Add hwservice related rules
+allow mlipay_app vendor_hal_soter_hwservice:hwservice_manager find;
+allow mlipay_app hal_mlipay_hwservice:hwservice_manager find;
+
+# Allow interaction with activity_service
+allow mlipay_app activity_service:service_manager find;
+
+r_dir_file(mlipay_app, firmware_file)
+set_prop(mlipay_app, vendor_payment_security_prop);
+
+get_prop(mlipay_app, vendor_fp_prop)
