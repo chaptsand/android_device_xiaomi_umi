@@ -29,8 +29,14 @@
          capability can provide power savings when wifi needs to be always kept on. -->
     <bool name="config_wifi_background_scan_support">true</bool>
 
+    <!-- Wifi driver supports batched scan -->
+    <bool name="config_wifi_batched_scan_supported">true</bool>
+
     <!-- Indicates that connected MAC randomization is supported on this device -->
     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
+
+    <!-- Boolean to provide support to keep wifi5 symbol for 8SS supported device and 11ax AP -->
+    <bool name="config_wifi_report_he_ready">true</bool>
 
     <!-- Boolean indicating that wifi only link configuratios that have exact same credentials (i.e PSK) -->
     <bool name="config_wifi_only_link_same_credential_configurations">false</bool>
@@ -47,15 +53,24 @@
     <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-SAE) for soft AP -->
     <bool name="config_wifi_softap_sae_supported">true</bool>
 
+    <!-- Boolean indicating that multiple NDPs are allowed on single NDI.
+     Enable Aware NDP interface selection on interface that already has network set up.
+     -->
+    <bool name="config_wifiAllowMultipleNetworksOnSameAwareNdi">true</bool>
+
     <!-- Integer indicating additional disconnect delay (in ms) after IMS onLost() indication is received -->
     <integer name="config_wifiDelayDisconnectOnImsLostMs">1000</integer>
 
     <!-- Integer indicating maximum hardware supported client number of soft AP -->
     <integer name="config_wifiHardwareSoftapMaxClientCount">32</integer>
 
-    <!-- List of allowed channels in 2GHz band for softap. If the device doesn't want to restrict
-         channels this should be empty. Values is a comma separated channel string and/or channel
-         range string like '1-6,11'. -->
-    <string name="config_wifiSoftap2gChannelList" />
+    <!-- Channel list for softap 2G band. Empty means all channels -->
+    <string name="config_wifiSoftap2gChannelList"></string>
+
+    <!-- Channel list for softap 5G band. Empty means all channels -->
+    <string name="config_wifiSoftap5gChannelList"></string>
+
+    <!-- Channel list for softap 6G band. Empty means all channels -->
+    <string name="config_wifiSoftap6gChannelList"></string>
 
 </resources>

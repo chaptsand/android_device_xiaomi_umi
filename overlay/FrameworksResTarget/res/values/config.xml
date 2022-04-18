@@ -50,6 +50,18 @@
         autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
 
+    <!-- Idle current for Bluetooth controller. 0 by default. -->
+    <integer name="config_bluetooth_idle_cur_ma">6</integer>
+
+    <!-- Operating volatage for Bluetooth controller. 0 by default. -->
+    <integer name="config_bluetooth_operating_voltage_mv">3700</integer>
+
+    <!-- Rx current for Bluetooth controller. 0 by default. -->
+    <integer name="config_bluetooth_rx_cur_ma">28</integer>
+
+    <!-- Tx current for Bluetooth controller. 0 by default. -->
+    <integer name="config_bluetooth_tx_cur_ma">36</integer>
+
     <!-- Package names to use with vendor iwlan implementation. -->
     <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
     <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
