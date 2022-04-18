@@ -123,6 +123,9 @@
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
+    <!-- Whether to select voice/data/sms preference without user confirmation -->
+    <bool name="config_voice_data_sms_auto_fallback">true</bool>
+
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.
          Here are a few of them:
@@ -155,23 +158,11 @@
          skipped, the restoring is handled by modem if true. -->
     <bool name="skip_restoring_network_selection">true</bool>
 
-    <!-- Idle current for bluetooth controller, 0 by default. -->
-    <integer name="config_bluetooth_idle_cur_ma">3</integer>
-
-    <!-- Operating volatage for bluetooth controller, 0 by default. -->
-    <integer name="config_bluetooth_operating_voltage_mv">3700</integer>
-
-    <!-- Rx current for bluetooth controller, 0 by default. -->
-    <integer name="config_bluetooth_rx_cur_ma">20</integer>
-
-    <!-- Tx current for bluetooth controller, 0 by default. -->
-    <integer name="config_bluetooth_tx_cur_ma">33</integer>
-
     <!-- The default peak refresh rate for a given device. Change this value if you want to prevent
          the framework from using higher refresh rates, even if display modes with higher refresh
          rates are available from hardware composer. Only has an effect if the value is
          non-zero. -->
-    <integer name="config_defaultPeakRefreshRate">180</integer>
+    <integer name="config_defaultPeakRefreshRate">240</integer>
 
     <!-- The default refresh rate for a given device. Change this value to set a higher default
          refresh rate. If the hardware composer on the device supports display modes with a higher
@@ -204,5 +195,13 @@
 
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName">com.google.android.gms</string>
+
+    <!-- Package names to use with vendor iwlan implementation. -->
+    <string name="config_wlan_data_service_package">vendor.qti.iwlan</string>
+    <string name="config_wlan_network_service_package">vendor.qti.iwlan</string>
+    <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
+
+    <!-- Configure emergency apn as empty(null) apn -->
+    <string name="config_emergency_apn"></string>
 
 </resources>
