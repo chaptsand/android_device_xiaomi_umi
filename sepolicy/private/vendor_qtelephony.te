@@ -1,0 +1,1 @@
+allow vendor_qtelephony vendor_hal_telephony_service:service_manager find;

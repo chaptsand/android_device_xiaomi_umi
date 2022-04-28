@@ -1,0 +1,7 @@
+# IMS
+vendor.qti.hardware.radio.ims.IImsRadio/imsradio0           u:object_r:vendor_hal_telephony_service:s0
+vendor.qti.hardware.radio.ims.IImsRadio/imsradio1           u:object_r:vendor_hal_telephony_service:s0
+vendor.qti.hardware.radio.qtiradio.IQtiRadioStable/slot1    u:object_r:vendor_hal_telephony_service:s0
+vendor.qti.hardware.radio.qtiradio.IQtiRadioStable/slot2    u:object_r:vendor_hal_telephony_service:s0
+vendor.qti.hardware.radio.am.IQcRilAudio/slot1              u:object_r:vendor_hal_telephony_service:s0
+vendor.qti.hardware.radio.am.IQcRilAudio/slot2              u:object_r:vendor_hal_telephony_service:s0
