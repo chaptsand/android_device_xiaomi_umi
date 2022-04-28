@@ -88,10 +88,6 @@ vendor/lib/vendor.qti.hardware.alarm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# ANT+
-system_ext/lib/com.qualcomm.qti.ant@1.0.so
-system_ext/lib64/com.qualcomm.qti.ant@1.0.so
-
 # Audio
 vendor/lib/hw/audio.primary.kona.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
@@ -168,7 +164,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib/com.dsi.ant@1.0.so
 vendor/lib/libbt-hidlclient.so
 vendor/lib/libbtnv.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
@@ -176,7 +171,6 @@ vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib64/com.dsi.ant@1.0.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
