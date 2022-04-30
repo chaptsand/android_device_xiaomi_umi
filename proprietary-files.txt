@@ -811,6 +811,9 @@ vendor/lib64/libllvm-qcom.so
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
+# IFAA
+-vendor/app/IFAAService/IFAAService.apk
+
 # IOP
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
