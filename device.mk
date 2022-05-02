@@ -261,6 +261,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
+# Mlipay
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.mlipay@1.1.vendor
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
