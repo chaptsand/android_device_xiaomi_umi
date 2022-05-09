@@ -1,13 +1,31 @@
+# Audio
+audio.offload.buffer.size.kb=32
+audio.offload.gapless.enabled=true
+
 # Camera
 vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam
+
+# CNE
+persist.vendor.cne.feature=1
 
 # DPM
 persist.vendor.dpm.feature=1
 
 # GPS
+persist.backup.ntpServer=0.pool.ntp.org
 persist.sys.gps.fence=true
 persist.sys.gps.polaris=true
+
+# Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+ro.media.recorder-max-base-layer-fps=60
+
+# NFC
+ro.nfc.port=I2C
 
 # Telephony
 ro.telephony.sim_slots.count=2
 telephony.active_modems.max_count=2
+
+# Time
+persist.timed.enable=true
