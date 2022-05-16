@@ -1,0 +1,2 @@
+allow platform_app vendor_hal_soter_hwservice:hwservice_manager find;
+binder_call(platform_app, vendor_hal_soter_qti)
