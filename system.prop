@@ -12,6 +12,11 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# LMK properties
+ro.lmk.use_minfree_levels=true
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=15
+
 # RIL
 persist.vendor.radio.report_codec=1
 ril.subscription.types=NV,RUIM
