@@ -332,10 +332,6 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
-
 # QMI
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
@@ -345,7 +341,8 @@ PRODUCT_PACKAGES += \
 # QTI COMPONENTS
 TARGET_BOARD_PLATFORM := kona
 TARGET_COMMON_QTI_COMPONENTS := \
-    display
+    display \
+    perf
 
 # RIL
 PRODUCT_PACKAGES += \

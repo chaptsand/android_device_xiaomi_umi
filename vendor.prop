@@ -150,9 +150,6 @@ persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
