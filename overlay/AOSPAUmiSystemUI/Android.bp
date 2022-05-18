@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2022 Paranoid Android
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "AOSPAUmiSystemUI",
+    system_ext_specific: true,
+}

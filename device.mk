@@ -309,7 +309,6 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
@@ -320,6 +319,8 @@ PRODUCT_PACKAGES += \
     WifiResCommon_Sys
 
 PRODUCT_PACKAGES += \
+    AOSPAUmiSettings \
+    AOSPAUmiSystemUI \
     FrameworksResTarget \
     UmiFrameworks \
     UmiSystemUI \

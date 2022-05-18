@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-     Copyright (C) 2016 The CyanogenMod Project
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2022 Paranoid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,6 +14,8 @@
      limitations under the License.
 -->
 <resources>
-    <bool name="call_recording_enabled">true</bool>
-    <integer name="call_recording_audio_source">4</integer>
+
+    <!-- Whether to show vibration intensity in vibration settings -->
+    <bool name="config_vibration_supports_multiple_intensities">true</bool>
+
 </resources>
