@@ -102,7 +102,8 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libtinycompress \
     libvisualizer \
-    libvolumelistener
+    libvolumelistener \
+    sound_trigger.primary.kona
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
