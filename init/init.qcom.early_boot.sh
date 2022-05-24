@@ -372,10 +372,6 @@ case "$target" in
                 ;;
              518)
                 ;;
-            *)
-                # default case is for bengal
-                setprop vendor.netflix.bsp_rev "Q6115-31409-1"
-                ;;
         esac
         ;;
     "sdm710" | "msmpeafowl")
@@ -462,7 +458,7 @@ set_density_by_fb
 
 
 # set Lilliput LCD density for ADP
-product=`getprop ro.build.product`
+product=`getprop ro.board.platform`
 
 case "$product" in
         "msmnile_au")
