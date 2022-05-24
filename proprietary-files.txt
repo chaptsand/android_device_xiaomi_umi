@@ -237,6 +237,7 @@ vendor/lib64/libalAILDC.so
 vendor/lib64/libalCFR.so
 vendor/lib64/libalLDC.so
 vendor/lib64/libalhLDC.so
+vendor/lib64/libarcdualcamsat.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libcamera_dirty.so
 vendor/lib64/libcamera_nn_stub.so
