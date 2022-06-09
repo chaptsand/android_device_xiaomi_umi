@@ -2536,7 +2536,108 @@
 
     <path name="spkr-vi-record">
     </path>
+    <path name="speaker1">
+        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
+        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
+        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="TRH PCM Source" value="DSP" />
+    </path>
 
+    <path name="speaker2">
+        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
+        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
+        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="TLH PCM Source" value="DSP" />
+    </path>
+
+    <path name="speaker3">
+        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
+        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
+        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="TRL PCM Source" value="DSP" />
+    </path>
+
+    <path name="speaker4">
+        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
+        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
+        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="TLL PCM Source" value="DSP" />
+    </path>
+
+    <path name="speaker5">
+        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
+        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
+        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="BRH PCM Source" value="DSP" />
+    </path>
+
+    <path name="speaker6">
+        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
+        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
+        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="BLH PCM Source" value="DSP" />
+    </path>
+
+    <path name="speaker7">
+        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
+        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
+        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="BLL PCM Source" value="DSP" />
+    </path>
+
+    <path name="speaker8">
+        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
+        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
+        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="BRL PCM Source" value="DSP" />
+    </path>
+
+    <path name="four-channel-speaker">
+        <ctl name="TERT_TDM_TX_0 Channels" value="Four" />
+        <ctl name="TERT_TDM_RX_0 Channels" value="Four" />
+        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
+        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="TLH ASPTX Ref" value="Ref" />
+        <ctl name="TLL ASPTX Ref" value="Ref" />
+        <ctl name="TRH ASPTX Ref" value="Ref" />
+        <ctl name="TRL ASPTX Ref" value="Ref" />
+        <ctl name="BLH ASPTX Ref" value="Ref" />
+        <ctl name="BLL ASPTX Ref" value="Ref" />
+        <ctl name="BRH ASPTX Ref" value="Ref" />
+        <ctl name="BRL ASPTX Ref" value="Ref" />
+        <ctl name="TLH ASPRX1 Slot Position" value="0" />
+        <ctl name="TLH ASPRX2 Slot Position" value="4" />
+        <ctl name="TLL ASPRX1 Slot Position" value="0" />
+        <ctl name="TLL ASPRX2 Slot Position" value="4" />
+        <ctl name="TRH ASPRX1 Slot Position" value="1" />
+        <ctl name="TRH ASPRX2 Slot Position" value="5" />
+        <ctl name="TRL ASPRX1 Slot Position" value="1" />
+        <ctl name="TRL ASPRX2 Slot Position" value="5" />
+        <ctl name="BLH ASPRX1 Slot Position" value="2" />
+        <ctl name="BLH ASPRX2 Slot Position" value="6" />
+        <ctl name="BLL ASPRX1 Slot Position" value="2" />
+        <ctl name="BLL ASPRX2 Slot Position" value="6" />
+        <ctl name="BRH ASPRX1 Slot Position" value="3" />
+        <ctl name="BRH ASPRX2 Slot Position" value="7" />
+        <ctl name="BRL ASPRX1 Slot Position" value="3" />
+        <ctl name="BRL ASPRX2 Slot Position" value="7" />
+        <ctl name="TRH PCM Source" value="DSP" />
+        <ctl name="TRL PCM Source" value="DSP" />
+        <ctl name="TLH PCM Source" value="DSP" />
+        <ctl name="TLL PCM Source" value="DSP" />
+        <ctl name="BRH PCM Source" value="DSP" />
+        <ctl name="BRL PCM Source" value="DSP" />
+        <ctl name="BLH PCM Source" value="DSP" />
+        <ctl name="BLL PCM Source" value="DSP" />
+        <ctl name="TLH Channel Swap" value="Off" />
+        <ctl name="TLL Channel Swap" value="Off" />
+        <ctl name="TRH Channel Swap" value="Off" />
+        <ctl name="TRL Channel Swap" value="Off" />
+        <ctl name="BLH Channel Swap" value="Off" />
+        <ctl name="BLL Channel Swap" value="Off" />
+        <ctl name="BRH Channel Swap" value="Off" />
+        <ctl name="BRL Channel Swap" value="Off" />
+    </path>
     <!-- These are actual sound device specific mixer settings -->
     <path name="amic2">
         <ctl name="TX DEC0 MUX" value="SWR_MIC" />
@@ -2591,7 +2692,7 @@
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
         <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
         <ctl name="ADC1_MIXER Switch" value="1" />
-        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="ADC1 Volume" value="20" />
     </path>
 
     <path name="top-mic">
@@ -2601,10 +2702,21 @@
         <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
         <ctl name="ADC4_MIXER Switch" value="1" />
         <ctl name="ADC4 MUX" value="INP5" />
-        <ctl name="ADC4 Volume" value="6" />
+        <ctl name="ADC4 Volume" value="20" />
     </path>
 
     <path name="back-mic">
+        <ctl name="TX DEC0 MUX" value="SWR_MIC"/>
+        <ctl name="TX SMIC MUX0" value="ADC2" />
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC3_MIXER Switch" value="1" />
+        <ctl name="ADC3 MUX" value="INP4" />
+        <ctl name="HDR34 MUX" value="NO_HDR34" />
+        <ctl name="ADC3 Volume" value="20" />
+    </path>
+
+    <path name="front-mic">
         <ctl name="TX DEC0 MUX" value="SWR_MIC"/>
         <ctl name="TX SMIC MUX0" value="ADC1" />
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
@@ -2612,7 +2724,7 @@
         <ctl name="ADC2_MIXER Switch" value="1" />
         <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="HDR12 MUX" value="NO_HDR12" />
-        <ctl name="ADC2 Volume" value="6" />
+        <ctl name="ADC2 Volume" value="20" />
     </path>
 
     <path name="va-enroll-mic">
@@ -3130,6 +3242,9 @@
     <path name="afe-proxy">
     </path>
 
+    <path name="afe-proxy-record">
+    </path>
+
     <path name="display-port">
     </path>
 
@@ -3317,6 +3432,31 @@
         <ctl name="TX DMIC MUX3" value="DMIC2" />
     </path>
 
+   <path name="camcorder-tmic-azoom">
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="Three" />
+        <ctl name="TX DEC0 MUX" value="SWR_MIC"/>
+        <ctl name="TX SMIC MUX0" value="ADC0" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC"/>
+        <ctl name="TX SMIC MUX1" value="ADC3" />
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
+        <ctl name="ADC4 MUX" value="INP5" />
+        <ctl name="ADC4 Volume" value="6" />
+        <ctl name="TX DEC2 MUX" value="SWR_MIC"/>
+        <ctl name="TX SMIC MUX2" value="ADC2" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="ADC3_MIXER Switch" value="1" />
+        <ctl name="ADC3 MUX" value="INP4" />
+        <ctl name="HDR34 MUX" value="NO_HDR34" />
+        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="TX DMIC MUX1" value="DMIC0" />
+        <ctl name="TX DMIC MUX2" value="DMIC1" />
+        <ctl name="TX DMIC MUX3" value="DMIC2" />
+    </path>
+
     <path name="speaker-tmic">
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="Three" />
         <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
@@ -3330,6 +3470,31 @@
     <path name="voice-speaker-tmic">
         <path name="speaker-tmic" />
     </path>
+
+    <path name="game-tmic">
+         <ctl name="TX_CDC_DMA_TX_3 Channels" value="Three" />
+         <ctl name="TX DEC0 MUX" value="SWR_MIC"/>
+         <ctl name="TX SMIC MUX0" value="ADC0" />
+         <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+         <ctl name="ADC1_MIXER Switch" value="1" />
+         <ctl name="ADC1 Volume" value="6" />
+         <ctl name="TX DEC1 MUX" value="SWR_MIC"/>
+         <ctl name="TX SMIC MUX1" value="ADC3" />
+         <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+         <ctl name="ADC4_MIXER Switch" value="1" />
+         <ctl name="ADC4 MUX" value="INP5" />
+         <ctl name="ADC4 Volume" value="6" />
+         <ctl name="TX DEC2 MUX" value="SWR_MIC"/>
+         <ctl name="TX SMIC MUX2" value="ADC2" />
+         <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+         <ctl name="ADC3_MIXER Switch" value="1" />
+         <ctl name="ADC3 MUX" value="INP4" />
+         <ctl name="HDR34 MUX" value="NO_HDR34" />
+         <ctl name="ADC3 Volume" value="6" />
+         <ctl name="TX DMIC MUX1" value="DMIC0" />
+         <ctl name="TX DMIC MUX2" value="DMIC1" />
+         <ctl name="TX DMIC MUX3" value="DMIC2" />
+     </path>
 
     <!-- Quad MIC devices -->
     <path name="speaker-qmic">
