@@ -509,6 +509,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    <!--ANT-->
+    <hal format="hidl">
+        <name>com.dsi.ant</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IAnt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!--TuiComm-->
     <hal format="hidl">
         <name>vendor.qti.hardware.tui_comm</name>
