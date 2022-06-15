@@ -856,8 +856,8 @@ vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
 
 # NFC
-vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
-vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
+vendor/etc/libnfc-nxp_RF.conf
+vendor/lib/libsn100u_fw.so
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
@@ -1139,9 +1139,6 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
 vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
 vendor/lib64/android.hardware.secure_element@1.0-impl.so
-vendor/lib64/jcos_nq_client.so
-vendor/lib64/ls_nq_client.so
-vendor/lib64/se_nq_extn_client.so
 
 # Sensors
 vendor/bin/init.qcom.sensors.sh
