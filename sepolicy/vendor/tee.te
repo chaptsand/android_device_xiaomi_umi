@@ -1,3 +1,5 @@
+typeattribute tee data_between_core_and_vendor_violators;
+
 # Fingerprint data
-allow tee vendor_fingerprint_data_file:dir rw_dir_perms;
-allow tee vendor_fingerprint_data_file:file create_file_perms;
+allow tee fingerprint_data_file:dir create_dir_perms;
+allow tee fingerprint_data_file:file create_file_perms;
