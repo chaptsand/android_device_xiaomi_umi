@@ -23,11 +23,12 @@
 /dev/goodix_fp                                              u:object_r:fingerprint_device:s0
 
 # Fingerprint data
-/data/vendor/fpc(/.*)?                                      u:object_r:vendor_fingerprint_data_file:s0
-/data/vendor/fpdump(/.*)?                                   u:object_r:vendor_fingerprint_data_file:s0
-/data/vendor/goodix(/.*)?                                   u:object_r:vendor_fingerprint_data_file:s0
-/mnt/vendor/persist/fpc(/.*)?                               u:object_r:vendor_fingerprint_data_file:s0
-/mnt/vendor/persist/goodix(/.*)?                            u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?                                      u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/fpdump(/.*)?                                   u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/gf_data(/.*)?                                  u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/goodix(/.*)?                                   u:object_r:fingerprint_vendor_data_file:s0
+/mnt/vendor/persist/fpc(/.*)?                               u:object_r:fingerprint_vendor_data_file:s0
+/mnt/vendor/persist/goodix(/.*)?                            u:object_r:fingerprint_vendor_data_file:s0
 
 # Graphics nodes
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param        u:object_r:vendor_sysfs_graphics:s0
