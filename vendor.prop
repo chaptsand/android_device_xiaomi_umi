@@ -172,7 +172,6 @@ persist.rcs.supported=0
 # RIL
 persist.radio.multisim.config=dsds
 persist.vendor.radio.atfwd.start=true
-persist.vendor.radio.cdma_cap=false
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.data_ltd_sys_ind=1
