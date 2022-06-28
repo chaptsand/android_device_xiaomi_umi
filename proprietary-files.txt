@@ -79,7 +79,7 @@ vendor/firmware/a650_zap.elf
 vendor/firmware/a650_zap.mdt
 
 # Alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk
+product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -491,8 +491,8 @@ vendor/lib64/libcdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
 # CNE
--vendor/app/CneApp/CneApp.apk
--vendor/app/IWlanService/IWlanService.apk
+vendor/app/CneApp/CneApp.apk
+vendor/app/IWlanService/IWlanService.apk
 vendor/bin/cnd
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
@@ -624,7 +624,7 @@ system_ext/lib64/libdpmfdmgr.so
 system_ext/lib64/libdpmframework.so
 system_ext/lib64/libdpmtcm.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
--system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
+system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
 vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
@@ -666,7 +666,7 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 # DRM (Widevine)
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libbase64.so
 vendor/lib/libcppf.so
@@ -716,7 +716,7 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 # GNSS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
+vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib/libbatching.so
 vendor/lib/libgeofencing.so
@@ -750,7 +750,7 @@ vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
@@ -787,7 +787,7 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Graphics
--vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED
+vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -909,7 +909,7 @@ vendor/etc/seccomp_policy/mediacodec.policy
 # Mlipay
 vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
--vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
+vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
 
@@ -919,8 +919,8 @@ vendor/lib/libsn100u_fw.so
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/libhta.so
 vendor/lib64/libhta_hexagon_runtime.so
@@ -1082,15 +1082,15 @@ vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # RIL
--system_ext/app/QtiTelephony/QtiTelephony.apk
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+system_ext/app/QtiTelephony/QtiTelephony.apk
+system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 system_ext/framework/qcrilhook.jar
 system_ext/framework/qti-telephony-common.jar
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/hw/qcrild
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
@@ -1190,7 +1190,7 @@ system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
--system_ext/priv-app/ims/ims.apk
+system_ext/priv-app/ims/ims.apk
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
@@ -1423,7 +1423,7 @@ vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 
 # Soter
--vendor/app/SoterService/SoterService.apk
+vendor/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
@@ -1465,11 +1465,11 @@ vendor/etc/thermald-devices.conf
 # Limits HAL
 vendor/bin/hw/vendor.qti.hardware.limits@1.0-service
 vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc
--vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
+vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
 vendor/lib64/vendor.qti.hardware.limits@1.0.so
 
 # Time
--vendor/app/TimeService/TimeService.apk
+vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
