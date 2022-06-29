@@ -5,17 +5,17 @@
 -->
 <resources>
 
-    <!-- for 18dp of padding at 2.75px/dp at default density -->
-    <dimen name="rounded_corner_content_padding">49.5px</dimen>
+    <!-- Adjust the icon padding in status bar for rounded corners -->
+    <dimen name="rounded_corner_content_padding">43.25px</dimen>
 
     <!-- The padding on the top of the statusbar (usually 0). -->
     <dimen name="status_bar_padding_top">8dp</dimen>
 
     <!-- The padding on the start of the status bar. -->
-    <dimen name="status_bar_padding_start">0px</dimen>
+    <dimen name="status_bar_padding_start">3px</dimen>
 
     <!-- The padding on the end of the status bar. -->
-    <dimen name="status_bar_padding_end">18px</dimen>
+    <dimen name="status_bar_padding_end">3px</dimen>
 
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">@dimen/status_bar_padding_start</dimen>
