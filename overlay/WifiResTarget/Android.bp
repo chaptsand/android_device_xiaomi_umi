@@ -5,6 +5,5 @@
 
 runtime_resource_overlay {
     name: "WifiResTarget",
-    sdk_version: "current",
     vendor: true,
 }
