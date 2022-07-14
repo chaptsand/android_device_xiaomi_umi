@@ -347,6 +347,7 @@ PRODUCT_PACKAGES += \
     WifiResCommon
 
 PRODUCT_PACKAGES += \
+    AOSPAUmiFrameworks \
     AOSPAUmiSettings \
     AOSPAUmiSystemUI \
     FrameworksResTarget \
