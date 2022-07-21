@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "TelephonyResCommon",
+    name: "TelephonyResCommon_Sys",
     product_specific: true,
 }
