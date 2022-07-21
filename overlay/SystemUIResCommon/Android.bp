@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIResCommon",
+    name: "SystemUIResCommon_Sys",
     product_specific: true,
 }
