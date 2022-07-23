@@ -48,6 +48,13 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "init.recovery.qcom.rc",
+    src: "init.recovery.qcom.rc",
+    sub_dir: "init",
+    recovery: true,
+}
+
 sh_binary {
     name: "init.class_main.sh",
     src: "init.class_main.sh",
