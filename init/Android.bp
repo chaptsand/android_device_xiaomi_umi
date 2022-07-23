@@ -9,9 +9,24 @@ prebuilt_etc {
     vendor: true,
 }
 
-sh_binary {
-    name: "init.mdm.sh",
-    src: "init.mdm.sh",
+prebuilt_etc {
+    name: "init.qcom.rc",
+    src: "init.qcom.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.qcom.rc",
+    src: "init.recovery.qcom.rc",
+    sub_dir: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "init.target.rc",
+    sub_dir: "init/hw",
     vendor: true,
 }
 
@@ -23,34 +38,27 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.target.rc",
-    src: "init.target.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.mi.usb.sh",
-    src: "init.mi.usb.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qti.dcvs.sh",
-    src: "init.qti.dcvs.sh",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.qcom.rc",
-    src: "init.qcom.rc",
-    sub_dir: "init/hw",
+    name: "ueventd.qcom.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.qcom.rc",
     vendor: true,
 }
 
 sh_binary {
     name: "init.class_main.sh",
     src: "init.class_main.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mdm.sh",
+    src: "init.mdm.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mi.usb.sh",
+    src: "init.mi.usb.sh",
     vendor: true,
 }
 
@@ -72,9 +80,8 @@ sh_binary {
     vendor: true,
 }
 
-prebuilt_etc {
-    name: "ueventd.qcom.rc",
-    filename: "ueventd.rc",
-    src: "ueventd.qcom.rc",
+sh_binary {
+    name: "init.qti.dcvs.sh",
+    src: "init.qti.dcvs.sh",
     vendor: true,
 }
