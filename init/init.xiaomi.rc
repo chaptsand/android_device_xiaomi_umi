@@ -53,6 +53,12 @@ on boot
     chown system system /sys/touchpanel/double_tap
     write /sys/block/sda/queue/wbt_lat_usec 75000
 
+on property:sys.boot_completed=1
+    # configure input boost settings
+    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1344000"
+    write /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq "0:1804800 1:0 2:0 3:0 4:2419200 5:0 6:0 7:2841600"
+    write /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms 400
+
 on charger
     mkdir /mnt/vendor/persist
     chown root system /mnt/vendor/persist
