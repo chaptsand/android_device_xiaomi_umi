@@ -51,8 +51,11 @@ on boot
     chown system system /sys/class/drm/card0-DSI-1/panel_info
     chown system system /sys/class/thermal/thermal_message/sconfig
     chown system system /sys/class/thermal/thermal_message/balance_mode
-    chown system system /sys/touchpanel/double_tap
     write /sys/block/sda/queue/wbt_lat_usec 75000
+
+    # Touch feature
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
 
 on charger
     mkdir /mnt/vendor/persist
