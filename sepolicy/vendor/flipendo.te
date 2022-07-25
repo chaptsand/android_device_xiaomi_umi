@@ -1,0 +1,2 @@
+# Allow flipendo to find vendor_hal_perf
+hal_client_domain(flipendo, vendor_hal_perf);
