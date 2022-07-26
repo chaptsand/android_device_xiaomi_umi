@@ -9,10 +9,10 @@ vendor.camera.sensor.                       u:object_r:vendor_camera_sensor_prop
 vendor.camera.boot_complete                 u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
-persist.vendor.sys.fp.                      u:object_r:vendor_fp_prop:s0
-ro.boot.fpsensor                            u:object_r:vendor_fp_prop:s0
-ro.hardware.fp.                             u:object_r:vendor_fp_prop:s0
-vendor.fps_hal.                             u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.                      u:object_r:vendor_fingerprint_prop:s0
+ro.boot.fpsensor                            u:object_r:vendor_fingerprint_prop:s0
+ro.hardware.fp.                             u:object_r:vendor_fingerprint_prop:s0
+vendor.fps_hal.                             u:object_r:vendor_fingerprint_prop:s0
 
 # Mlipay
 persist.vendor.sys.pay.ifaa                 u:object_r:vendor_payment_security_prop:s0
