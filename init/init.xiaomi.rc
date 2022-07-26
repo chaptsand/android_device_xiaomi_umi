@@ -52,6 +52,7 @@ on boot
     chown system system /sys/class/thermal/thermal_message/sconfig
     chown system system /sys/class/thermal/thermal_message/balance_mode
     chown system system /sys/touchpanel/double_tap
+    write /sys/block/sda/queue/wbt_lat_usec 75000
 
 on charger
     mkdir /mnt/vendor/persist
