@@ -4,7 +4,7 @@ vendor_internal_prop(vendor_device_prop)
 
 vendor_internal_prop(vendor_thermal_normal_prop)
 
-vendor_public_prop(vendor_fp_prop)
+vendor_restricted_prop(vendor_fingerprint_prop)
 
 vendor_public_prop(vendor_payment_security_prop)
 
