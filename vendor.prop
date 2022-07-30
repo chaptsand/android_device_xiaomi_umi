@@ -150,3 +150,6 @@ ro.vendor.radio.5g=3
 # SoC
 ro.soc.manufacturer=QTI
 ro.soc.model=SM8250
+
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
