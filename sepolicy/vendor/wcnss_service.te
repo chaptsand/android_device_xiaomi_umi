@@ -1,2 +1,0 @@
-allow vendor_wcnss_service mnt_vendor_file:dir rw_dir_perms;
-allow vendor_wcnss_service mnt_vendor_file:file create_file_perms;
