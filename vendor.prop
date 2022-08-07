@@ -133,9 +133,6 @@ ro.vendor.use_data_netmgrd=true
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
-# RCS
-persist.rcs.supported=0
-
 # RIL
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.cdma_cap=false
