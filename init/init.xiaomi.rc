@@ -38,6 +38,8 @@ on post-fs-data
     chmod 0644 /dev/elliptic1
     chmod 0660 /dev/ir_spi
     mkdir /data/vendor/mac_addr 0770 system wifi
+    mkdir /data/vendor/sensor_log
+    chown system system /data/vendor/sensor_log
     chown system system /dev/ir_spi
     mkdir /data/vendor/wlan_logs 0777 root shell
     mkdir /data/vendor/nfc 0770 nfc nfc
@@ -107,6 +109,18 @@ on charger
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/subsys 0770 root system
     setprop sys.usb.config adb
+
+service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
+    override
+    class hal
+    user audioserver
+    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
+    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock
+    capabilities BLOCK_SUSPEND
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
+    socket audio_hw_socket seqpacket 0666 system system
+    onrestart restart audioserver
 
 service vendor.nv_mac /vendor/bin/nv_mac
     class late_start
