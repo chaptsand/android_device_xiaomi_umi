@@ -230,6 +230,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # QTI COMPONENTS
 TARGET_BOARD_PLATFORM := kona
 TARGET_COMMON_QTI_COMPONENTS := \
