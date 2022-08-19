@@ -145,6 +145,9 @@ PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmegface
 
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
