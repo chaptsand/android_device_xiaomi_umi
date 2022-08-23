@@ -88,6 +88,7 @@ ro.vendor.display.sensortype=2
 
 # DPM
 persist.vendor.dpm.feature=1
+persist.vendor.dpm.idletimer.mode=default
 persist.vendor.dpm.loglevel=0
 persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
