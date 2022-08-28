@@ -1,7 +1,3 @@
-# Bluetooth
-persist.vendor.bt.a2dp.aac_whitelist=false
-ro.bluetooth.library_name=libbluetooth_qti.so
-
 # Camera
 persist.vendor.camera.privapp.list=com.android.camera
 
