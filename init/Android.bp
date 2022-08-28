@@ -45,5 +45,5 @@ prebuilt_etc {
     name: "ueventd.xiaomi.rc",
     filename: "ueventd.rc",
     src: "ueventd.xiaomi.rc",
-    vendor: true,
+    device_specific: true,
 }
