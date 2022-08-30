@@ -16,9 +16,6 @@
 /dev/elliptic(.*)?                                          u:object_r:sound_device:s0
 /dev/xiaomi-touch                                           u:object_r:touchfeature_device:s0
 
-# EFS
-/dev/block/sde[0-9]                                         u:object_r:efs_block_device:s0
-
 # Fingerprint
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi                          u:object_r:hal_fingerprint_default_exec:s0
 
@@ -44,6 +41,9 @@
 # Hals
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service       u:object_r:hal_touchfeature_default_exec:s0
 /vendor/bin/mlipayd@1.1                                                  u:object_r:hal_mlipay_default_exec:s0
+
+# MSADP partition
+/dev/block/platform/soc/1d84000.ufshc/by-name/msadp         u:object_r:vendor_efs_boot_dev:s0
 
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                            u:object_r:persist_subsys_file:s0
