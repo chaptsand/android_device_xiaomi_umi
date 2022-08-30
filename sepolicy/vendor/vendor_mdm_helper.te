@@ -1,4 +1,8 @@
-allow vendor_mdm_helper efs_block_device:blk_file r_file_perms;
-allow vendor_mdm_helper vendor_tombstone_data_file:fifo_file rw_file_perms;
-
+# Allow MDM helper to read SSR property
 get_prop(vendor_mdm_helper, vendor_ssr_prop)
+
+# Allow MDM helper to create vendor_tombstone_data_file
+allow vendor_mdm_helper vendor_tombstone_data_file:fifo_file create_file_perms;
+
+# Allow MDM helper r/w to MSADP partition
+allow vendor_mdm_helper vendor_efs_boot_dev:blk_file rw_file_perms;
