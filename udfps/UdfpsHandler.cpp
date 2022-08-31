@@ -86,18 +86,21 @@ class XiaomiKonaUdfpsHander : public UdfpsHandler {
 
                 mDevice->extCmd(mDevice, COMMAND_NIT,
                                 readBool(fd) ? PARAM_NIT_FOD : PARAM_NIT_NONE);
+
+                int arg[2] = {TOUCH_UDFPS_ENABLE,
+                              readBool(fd) ? UDFPS_STATUS_ON : UDFPS_STATUS_OFF};
+                ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
+
             }
         }).detach();
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
-        int arg[2] = {TOUCH_UDFPS_ENABLE, UDFPS_STATUS_ON};
-        ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
+        // nothing
     }
 
     void onFingerUp() {
-        int arg[2] = {TOUCH_UDFPS_ENABLE, UDFPS_STATUS_OFF};
-        ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
+        // nothing
     }
   private:
     fingerprint_device_t *mDevice;
