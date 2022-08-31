@@ -1,9 +1,14 @@
 allow vendor_qti_init_shell sysfs_wakeup:file setattr;
-allow vendor_qti_init_shell configfs:dir rw_dir_perms;
-allow vendor_qti_init_shell configfs:file create_file_perms;
 
 # allow init.mi.btmac.sh to read hex-encoded mac address and set it
 set_prop(vendor_qti_init_shell, vendor_bluetooth_prop)
 
 # Allow init.mi.btmac.sh to read vendor_wifi_vendor_data_file
 r_dir_file(vendor_qti_init_shell, vendor_wifi_vendor_data_file)
+
+# Allow init.qcom.usb.sh to create files in uvc.0
+allow vendor_qti_init_shell configfs:dir create_dir_perms;
+allow vendor_qti_init_shell configfs:{
+  file
+  lnk_file
+} create_file_perms;
