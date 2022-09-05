@@ -42,9 +42,6 @@
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service       u:object_r:hal_touchfeature_default_exec:s0
 /vendor/bin/mlipayd@1.1                                                  u:object_r:hal_mlipay_default_exec:s0
 
-# MSADP partition
-/dev/block/platform/soc/1d84000.ufshc/by-name/msadp         u:object_r:vendor_efs_boot_dev:s0
-
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                            u:object_r:persist_subsys_file:s0
 
@@ -72,6 +69,10 @@
 /vendor/bin/nv_mac                                          u:object_r:vendor_wcnss_service_exec:s0
 /data/vendor/mac_addr(/.*)?                                 u:object_r:vendor_wifi_vendor_data_file:s0
 /data/vendor/wlan_logs(/.*)?                                u:object_r:vendor_wifi_vendor_log_data_file:s0
+
+# Xiaomi modem boot devices
+/dev/block/platform/soc/1d84000.ufshc/by-name/msadp            u:object_r:vendor_efs_boot_dev:s0
+/dev/block/platform/soc/1d84000.ufshc/by-name/mdm1m9kefs[0-9]  u:object_r:vendor_efs_boot_dev:s0
 
 # Xiaomi thermal daemon
 /vendor/bin/mi_thermald                                     u:object_r:mi_thermald_exec:s0
