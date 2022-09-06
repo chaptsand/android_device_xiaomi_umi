@@ -339,6 +339,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
     FrameworksResUmi \
+    SettingsResUmi \
     SystemUIResUmi \
     TelephonyResUmi \
     WifiResTarget
