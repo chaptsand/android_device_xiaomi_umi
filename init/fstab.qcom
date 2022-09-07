@@ -35,7 +35,7 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 #<src>                                                 <mnt_point>            <type>  <mnt_flags and options>                            <fs_mgr_flags>
-system                                                  /system                ext4    ro,barrier=1,discard                                 wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+system                                                  /system                ext4    ro,barrier=1,discard                                 wait,avb=vbmeta_system,logical,first_stage_mount
 system_ext                                              /system_ext            ext4    ro,barrier=1,discard                                 wait,avb=vbmeta_system,logical,first_stage_mount
 product                                                 /product               ext4    ro,barrier=1,discard                                 wait,avb=vbmeta_system,logical,first_stage_mount
 vendor                                                  /vendor                ext4    ro,barrier=1,discard                                 wait,avb,logical,first_stage_mount
