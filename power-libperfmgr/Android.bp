@@ -1,8 +1,8 @@
 cc_binary {
-    name: "android.hardware.power-service.pixel-libperfmgr",
+    name: "android.hardware.power-service.xiaomi_umi-libperfmgr",
     relative_install_path: "hw",
-    init_rc: ["android.hardware.power-service.pixel-libperfmgr.rc"],
-    vintf_fragments: ["android.hardware.power-service.pixel.xml"],
+    init_rc: ["android.hardware.power-service.xiaomi_umi-libperfmgr.rc"],
+    vintf_fragments: ["android.hardware.power-service.xiaomi_umi.xml"],
     vendor: true,
     shared_libs: [
         "android.hardware.power-V3-ndk",
