@@ -1,0 +1,27 @@
+cc_binary {
+    name: "android.hardware.power-service.pixel-libperfmgr",
+    relative_install_path: "hw",
+    init_rc: ["android.hardware.power-service.pixel-libperfmgr.rc"],
+    vintf_fragments: ["android.hardware.power-service.pixel.xml"],
+    vendor: true,
+    shared_libs: [
+        "android.hardware.power-V3-ndk",
+        "libbase",
+        "libcutils",
+        "liblog",
+        "libutils",
+        "libbinder_ndk",
+        "libdisppower-pixel",
+        "libperfmgr",
+        "libprocessgroup",
+        "pixel-power-ext-V1-ndk",
+    ],
+    srcs: [
+        "service.cpp",
+        "InteractionHandler.cpp",
+        "Power.cpp",
+        "PowerExt.cpp",
+        "PowerHintSession.cpp",
+        "PowerSessionManager.cpp",
+    ],
+}
