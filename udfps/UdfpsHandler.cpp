@@ -119,6 +119,14 @@ class XiaomiKonaUdfpsHander : public UdfpsHandler {
     void onFingerUp() {
         // nothing
     }
+
+    void onAcquired(int32_t /*result*/, int32_t /*vendorCode*/) {
+        // nothing
+    }
+
+    void cancel() {
+        // nothing
+    }
   private:
     fingerprint_device_t *mDevice;
     android::base::unique_fd touch_fd_;
