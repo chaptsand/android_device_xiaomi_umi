@@ -1,2 +1,5 @@
+# Allow audioserver to r/w to f0_value sysfs
 allow audioserver sysfs_f0_value:file rw_file_perms;
+
+# Allow audioserver to r/w to sound_device
 allow audioserver sound_device:chr_file rw_file_perms;

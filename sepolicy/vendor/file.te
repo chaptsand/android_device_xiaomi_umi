@@ -1,23 +1,27 @@
+# Audio socket file type
 type audio_socket, file_type;
 
-type persist_subsys_file, vendor_persist_type, file_type;
-
-type proc_last_kmsg, fs_type, proc_type;
-
+# f0_value sysfs file
 type sysfs_f0_value, sysfs_type, fs_type;
 
-type sysfs_touchpanel, fs_type, sysfs_type;
+# Persist subsystem file
+type persist_subsys_file, vendor_persist_type, file_type;
 
-type sysfs_tp_partial_data, fs_type, sysfs_type;
-
-type sysfs_wireless_supply, fs_type, sysfs_type;
-
-type fingerprint_data_file, data_file_type, core_data_file_type, file_type;
-
+# Persist camera file
 type vendor_persist_camera_file, file_type, vendor_persist_type;
 
+# Fingerprint data file
+type fingerprint_data_file, data_file_type, core_data_file_type, file_type;
+
+# IIO sysfs file
 type vendor_sysfs_iio, fs_type, sysfs_type;
 
+# Thermal data file
+type vendor_thermal_data_file, file_type, data_file_type;
+
+# Touch sysfs file
+type sysfs_tp_partial_data, fs_type, sysfs_type;
 type vendor_sysfs_tp_virtual_prox, fs_type, sysfs_type;
 
-type vendor_thermal_data_file, file_type, data_file_type;
+# Touchpanel for dt2w
+type sysfs_touchpanel, fs_type, sysfs_type;

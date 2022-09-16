@@ -1,1 +1,2 @@
+# Allow IR HAL to r/w to IR device
 allow hal_ir_default vendor_ir_spi_device:chr_file rw_file_perms;

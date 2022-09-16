@@ -1,40 +1,53 @@
 typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 
-# Allow fingerprint HAL to create files in /data/vendor/fingerprint/
+# Allow fingerprint HAL to create fingerprint_data_file
 allow hal_fingerprint_default fingerprint_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
 
 allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
 
 # Allow hal_fingerprint_default to read and write to
-# fingerprint_device/input_device/tee_device/uhid_device
+# fingerprint_device/input_device/tee_device/touchfeature_device/uhid_device
 allow hal_fingerprint_default {
   fingerprint_device
   input_device
   tee_device
   touchfeature_device
   uhid_device
-}: chr_file rw_file_perms;
+}:chr_file rw_file_perms;
 
 allow hal_fingerprint_default {
   input_device
   vendor_sysfs_graphics
-}: dir r_dir_perms;
+}:dir r_dir_perms;
 
 allow hal_fingerprint_default {
   vendor_sysfs_fingerprint
   vendor_sysfs_graphics
-}: file rw_file_perms;
+}:file rw_file_perms;
 
+# Allow hal_fingerprint_default to read in firmware_file
 r_dir_file(hal_fingerprint_default, firmware_file)
 
-get_prop(system_server, vendor_fingerprint_prop);
+# Allow hal_fingerprint_default to read in vendor_sysfs_spss
+r_dir_file(hal_fingerprint_default, vendor_sysfs_spss)
 
+# Allow hal_fingerprint_default to read QDSP and XDSP device
+allow hal_fingerprint_default {
+  vendor_qdsp_device
+  vendor_xdsp_device
+}:chr_file r_file_perms;
+
+# Allow hal_fingerprint_default to set fingerprint properties
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
 
-allow hal_fingerprint_default vendor_sysfs_spss:dir { search };
-allow hal_fingerprint_default vendor_sysfs_spss:file { open read };
+# Allow hal_fingerprint_default to read adsprpc properties
+get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
 
+# Allow hal_fingerprint_default to add vendor_hal_xiaomi_fingerprint_hwservice
+add_hwservice(hal_fingerprint_default, vendor_hal_xiaomi_fingerprint_hwservice)
+
+# Allow hal_fingerprint_default to get IPerf interface
 hal_client_domain(hal_fingerprint_default, vendor_hal_perf)
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
