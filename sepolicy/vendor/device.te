@@ -1,9 +1,14 @@
+# EFS device
 type efs_block_device, dev_type;
 
+# Fingerprint device
 type fingerprint_device, dev_type;
 
+# IR device
+type vendor_ir_spi_device, dev_type;
+
+# Sound device
 type sound_device, dev_type;
 
+# Touch device
 type touchfeature_device, dev_type;
-
-type vendor_ir_spi_device, dev_type;
