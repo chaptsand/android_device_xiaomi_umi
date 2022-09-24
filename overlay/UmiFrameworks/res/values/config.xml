@@ -21,13 +21,17 @@
          non-zero. -->
     <integer name="config_defaultPeakRefreshRate">90</integer>
 
-    <!-- Note: This setting is deprecated, please use
-    config_screenBrightnessSettingMinimumFloat instead -->
-    <integer name="config_screenBrightnessSettingMinimum">1</integer>
+    <!-- Minimum screen brightness setting allowed by power manager.
+         The user is forbidden from setting the brightness below this level. -->
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.0017098193</item>
 
-    <!-- Note: This setting is deprecated, please use
-    config_screenBrightnessSettingDefaultFloat instead -->
-    <integer name="config_screenBrightnessSettingDefault">127</integer>
+    <!-- Maximum screen brightness allowed by the power manager.
+         The user is forbidden from setting the brightness above this level. -->
+    <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1</item>
+
+    <!-- Default screen brightness setting set.
+         Must be in the range specified by minimum and maximum. -->
+    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.26160234</item>
 
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
@@ -41,6 +45,10 @@
          hysteresis threshold. -->
     <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
+
+    <!-- The maximum range of gamma adjustment possible using the screen
+         auto-brightness adjustment setting. -->
+    <fraction name="config_autoBrightnessAdjustmentMaxGamma">100.0%</fraction>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
