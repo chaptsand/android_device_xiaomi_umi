@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHander.xiaomi_kona"
+#define LOG_TAG "UdfpsHandler.xiaomi_kona"
 
 #include "UdfpsHandler.h"
 
@@ -65,7 +65,7 @@ static bool readBool(int fd) {
     return c != '0';
 }
 
-class XiaomiKonaUdfpsHander : public UdfpsHandler {
+class XiaomiKonaUdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t *device) {
         mDevice = device;
@@ -133,7 +133,7 @@ class XiaomiKonaUdfpsHander : public UdfpsHandler {
 };
 
 static UdfpsHandler* create() {
-    return new XiaomiKonaUdfpsHander();
+    return new XiaomiKonaUdfpsHandler();
 }
 
 static void destroy(UdfpsHandler* handler) {
