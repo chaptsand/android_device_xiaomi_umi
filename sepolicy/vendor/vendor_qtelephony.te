@@ -1,3 +1,0 @@
-set_prop(vendor_qtelephony, radio_prop)
-
-allow vendor_qtelephony vendor_hal_datafactory_hwservice:hwservice_manager find;
