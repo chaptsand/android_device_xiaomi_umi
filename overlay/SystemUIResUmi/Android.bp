@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "UmiSystemUI",
-    vendor: true,
+    name: "SystemUIResUmi",
+    device_specific: true,
 }

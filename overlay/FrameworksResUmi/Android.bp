@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "UmiFrameworks",
-    vendor: true,
+    name: "FrameworksResUmi",
+    device_specific: true,
 }

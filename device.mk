@@ -338,9 +338,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
-    UmiFrameworks \
-    UmiSystemUI \
-    UmiTelephony \
+    FrameworksResUmi \
+    SystemUIResUmi \
+    TelephonyResUmi \
     WifiResTarget
 
 # Partitions

@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "UmiTelephony",
-    vendor: true,
+    name: "TelephonyResUmi",
+    device_specific: true,
 }
