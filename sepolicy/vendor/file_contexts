@@ -62,9 +62,6 @@
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_umi                                                                 u:object_r:hal_vibrator_default_exec:s0
 
-# Wireless Charging Supply
-/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless(/.*)?   u:object_r:vendor_sysfs_battery_supply:s0
-
 # Wlan
 /vendor/bin/nv_mac                                          u:object_r:vendor_wcnss_service_exec:s0
 /data/vendor/mac_addr(/.*)?                                 u:object_r:vendor_wifi_vendor_data_file:s0
