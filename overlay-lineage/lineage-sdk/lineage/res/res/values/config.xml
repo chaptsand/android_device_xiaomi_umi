@@ -16,4 +16,11 @@
         <item>restart_fastboot</item>
     </string-array>
 
+    <!-- The list of package IDs that are allowed to use aux cameras.
+         NOTE: If this list is empty then all apps will be able to use aux cameras. -->
+    <string-array name="config_cameraAuxPackageAllowList" translatable="false">
+        <item>com.android.camera</item>
+        <item>org.codeaurora.snapcam</item>
+    </string-array>
+
 </resources>
