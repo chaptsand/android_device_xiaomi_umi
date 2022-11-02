@@ -1,6 +1,3 @@
-# Camera
-vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam
-
 # CNE
 persist.vendor.cne.feature=1
 
