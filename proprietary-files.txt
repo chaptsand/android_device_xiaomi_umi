@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from UMI V13.0.7.0.SJBCNXM
+# All unpinned blobs are extracted from UMI V13.0.7.0.SJBMIXM
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
@@ -231,10 +231,7 @@ vendor/lib64/camera/com.qti.tuned.umi_semco_s5khmx.bin
 vendor/lib64/camera/com.qti.tuned.umi_sunny_gc02m1_depth.bin
 vendor/lib64/camera/com.qti.tuned.umi_sunny_gc02m1_macro.bin
 vendor/lib64/camera/com.qti.tuned.umi_sunny_ov13b10.bin
-vendor/lib64/camera/com.qti.tuned.umi_sunny_ov16e10.bin
 vendor/lib64/camera/com.qti.tuned.umi_sunny_s5k3t2.bin
-vendor/lib64/camera/com.qti.tuned.umi_sunny_s5k5e8yx_depth.bin
-vendor/lib64/camera/com.qti.tuned.umi_sunny_s5k5e8yx_macro.bin
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
@@ -608,6 +605,7 @@ vendor/lib64/libsdmextension.so|8627c97f04b0d542dfcfe98a212097e7d5e8c297
 vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
 # Display Calibration
+vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/ltm_config_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/ltm_config_xiaomi_42_02_0b_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.xml
