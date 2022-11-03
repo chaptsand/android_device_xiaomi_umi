@@ -1,0 +1,27 @@
+dontaudit {
+  hal_audio_default
+  hal_graphics_composer_default
+  hal_sensors_default
+  hal_tetheroffload_default
+  rild
+  system_app
+  vendor_adpl
+  vendor_cnd
+  vendor_dpmd
+  vendor_hal_imsrtp
+  vendor_ims_service
+  vendor_netmgrd
+  vendor_qti
+  vendor_wcnss_service
+} vendor_diag_device:chr_file rw_file_perms;
+
+dontaudit {
+  rild
+  vendor_hal_capabilityconfigstore_qti_default
+  vendor_hal_gnss_qti
+} vendor_pd_locater_dbg_prop:file r_file_perms;
+
+dontaudit gmscore_app { bt_firmware_file firmware_file }:filesystem getattr;
+dontaudit hal_wifi_default persist_vendor_debug_wifi_prop:file r_file_perms;
+dontaudit kernel self:qipcrtr_socket create;
+dontaudit vendor_hal_capabilityconfigstore_qti_default vendor_cap_configstore_dbg_prop:file r_file_perms;
