@@ -209,6 +209,9 @@ telephony.lteOnCdmaDevice=1
 ro.soc.manufacturer=QTI
 ro.soc.model=SM8250
 
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl

@@ -1452,8 +1452,12 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# Subsystem
-vendor/bin/ssr_setup
+# SS Restart - from LA.UM.9.12.r1-14400-SMxx50.0
+vendor/bin/ssr_diag|82db8b7fca90bc0e87b29d32cbda5cc7e4ec0749
+vendor/bin/ssr_setup|b181e27a6b93777430026ad403ca8e9cf811f5c6
+vendor/bin/subsystem_ramdump|804a1b433124d5bd022e762e536b4ae5e6bb0f2b
+vendor/lib/libsubsystem_control.so|8a24d9a5a1c8be316bc277b9944b29af2f91a9ee
+vendor/lib64/libsubsystem_control.so|4f54280aa78b617665d58a78cfbdef41de1b7a07
 
 # Thermal
 vendor/bin/mi_thermald
