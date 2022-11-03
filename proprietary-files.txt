@@ -592,20 +592,20 @@ vendor/lib64/libminksocket.so
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
 
-# Display (HDR)
-vendor/lib64/libhdr_tm.so
+# Display (HDR) - from LA.UM.9.12.r1-14400-SMxx50.0
+vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
 
-# Display (SDM)
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libdpps.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
+# Display (SDM) - from LA.UM.9.12.r1-14400-SMxx50.0
+vendor/lib64/libdisplayqos.so|15701f18257c43be5657bbd867a8acf1f469e373
+vendor/lib64/libdisplayskuutils.so|30dc405f5c127c9af7b5c9e6697db896f0b13693
+vendor/lib64/libdpps.so|103f4647f5311c6bf40ae498fefdaa98c0532417
+vendor/lib64/libqseed3.so|c9fb729cf48278d0c87d27c0af17ae3a8ccb1bf7
+vendor/lib64/libsdm-color.so|09e14227de5d3690a11d523d9e76148ed3327e97
+vendor/lib64/libsdm-colormgr-algo.so|1fb7f3cb11557bbf677afb5d6eda0e4e9fd3ac58
+vendor/lib64/libsdm-diag.so|d602a56edde3fb2cf7de81d5ab18ef2ef3cf3814
+vendor/lib64/libsdm-disp-vndapis.so|2f1abd975b1f1dbabcc410e56c29ac296adcc411
+vendor/lib64/libsdmextension.so|8627c97f04b0d542dfcfe98a212097e7d5e8c297
+vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
 # Display Calibration
 vendor/etc/ltm_config_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.xml
@@ -613,18 +613,18 @@ vendor/etc/ltm_config_xiaomi_42_02_0b_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_cmd_mode_dsc_dsi_panel.xml
 
-# Display Postprocessing
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/ppd
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib64/libdisp-aba.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.color@1.4.so
-vendor/lib64/vendor.display.color@1.5.so
-vendor/lib64/vendor.display.postproc@1.0.so
+# Display Postprocessing - from LA.UM.9.12.r1-14400-SMxx50.0
+vendor/bin/hw/vendor.display.color@1.0-service|9c77c3655befc1c53f842e1b9605b83e3dc64259
+vendor/bin/ppd|c478fa8957564bf1b2649b6ba80c07f72b0b318f
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib64/libdisp-aba.so|41fc61cdc8821ed206f649dd2eb5562b346ade77
+vendor/lib64/vendor.display.color@1.0.so|a404c41c1bbb827309e4be1576c7c7b493a6f6d6
+vendor/lib64/vendor.display.color@1.1.so|3e5f53e9d8fcf7eae6dcd1cc7eb7609a78647c2e
+vendor/lib64/vendor.display.color@1.2.so|030faf2b0da2dd7bce50b737456046e3a18569ac
+vendor/lib64/vendor.display.color@1.3.so|d62b2d195dd11489f54c6566dbe8765e2884bb81
+vendor/lib64/vendor.display.color@1.4.so|1f7ba10ae1770692a5cced3421cdc0e951301995
+vendor/lib64/vendor.display.color@1.5.so|c990c7fef7d69cee083554312d2ebf8ce56d5e4b
+vendor/lib64/vendor.display.postproc@1.0.so|42b17608cb441af528513f257b75dfdf01cc6d45
 
 # DPM
 framework/tcmclient.jar
@@ -804,43 +804,43 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
-# Graphics
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libVkLayer_q3dtools.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgpudataproducer.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libVkLayer_q3dtools.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
+# Graphics - from LA.UM.9.12.r1-14400-SMxx50.0
+vendor/lib/egl/eglSubDriverAndroid.so|1a1c287a32095bede1cd199594cb7fb89c1c15d0
+vendor/lib/egl/libEGL_adreno.so|2b96d33f61340c391cc2a6c503bff6b12f2659ed
+vendor/lib/egl/libGLESv1_CM_adreno.so|64b58204e029c848e35f50ad163952db497ea90f
+vendor/lib/egl/libGLESv2_adreno.so|472073ac858a1e571111d1be358d3e708435a911
+vendor/lib/egl/libq3dtools_adreno.so|e50851c6d93051fec5cb6b3314edf0791a539b0d
+vendor/lib/egl/libq3dtools_esx.so|122ce1321a366c2172edb2d17fbd97ed592978bc
+vendor/lib/libC2D2.so|c1916f2adb917f3567b872670496994456472586
+vendor/lib/libCB.so|f32644076f477c76d8445c8fa6e84182667c4be9
+vendor/lib/libOpenCL.so|be3067845af3b7d49ce2fcdd99625e4cd8276f09
+vendor/lib/libVkLayer_q3dtools.so|b999685ff20a97ce6e2efd9a49c3f13114b0c4ed
+vendor/lib/libadreno_utils.so|16186218eb714c7a0c0f51dd5cb65ad1beea311f
+vendor/lib/libc2d30_bltlib.so|90766895641fbda817bb2818a0538cb66be62d8b
+vendor/lib/libgpudataproducer.so|2f7c2e8e51fe56fc4a19540052d8d98f08740be1
+vendor/lib/libgsl.so|42ccc3ea2648c6c573b1a35f9f83f0f121346f85
+vendor/lib/libllvm-glnext.so|72aad0fa758773037556df7776dea9787fb436e5
+vendor/lib/libllvm-qcom.so|b3de7da40d95ae3be6f2f46d5ddc221cb852efe8
+vendor/lib64/egl/eglSubDriverAndroid.so|0e0c4a1d9462c15e2b14d03b66bed51e85bd9e27
+vendor/lib64/egl/libEGL_adreno.so|59cb197303a0374b11e9db751052a4e2fbfae7c4
+vendor/lib64/egl/libGLESv1_CM_adreno.so|d22773a61614ac71cf68d874db66bbe7739761ce
+vendor/lib64/egl/libGLESv2_adreno.so|957aef8788170c6a2a98c47923c973345c7ad013
+vendor/lib64/egl/libq3dtools_adreno.so|bbd2bdeb3d27461742b10490dc4d3f45379f276d
+vendor/lib64/egl/libq3dtools_esx.so|c906fa7cac4e8f99593968a9fe6c2d5b74552f3c
+vendor/lib64/libC2D2.so|2f5bb4e82006bcc854aa468126bd3fffab339f67
+vendor/lib64/libCB.so|133263ff178e640417790b0e51c2d59eb256f7c7
+vendor/lib64/libOpenCL.so|ce96cb481976251b309fed436c28935bad5f3e64
+vendor/lib64/libVkLayer_q3dtools.so|f418e113d2ffe17394ab342775b59033c39de91e
+vendor/lib64/libadreno_utils.so|0009a27f951d8c8e8ca645881a7bf8acd5f8afd2
+vendor/lib64/libc2d30_bltlib.so|6dfc4b3393a83113a91e2a3d8c2e4e58a62636dc
+vendor/lib64/libgpudataproducer.so|73626e1a3113963cceb376ab3e742994a208698e
+vendor/lib64/libgsl.so|a7eef1364ac0f92d16f439aef623ddd1e3112e8d
+vendor/lib64/libllvm-glnext.so|1c76e8d9a07dd4a317fea206854618df97bec9aa
+vendor/lib64/libllvm-qcom.so|e4ff6f0d3cd3823fa65768b935adfe878a4bda7a
 
-# Graphics (Vulkan)
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib64/hw/vulkan.adreno.so
+# Graphics (Vulkan) - from LA.UM.9.12.r1-14400-SMxx50.0
+vendor/lib/hw/vulkan.adreno.so|3c9aaf80e21610def254a2b0866ddf4da9222016
+vendor/lib64/hw/vulkan.adreno.so|bcc2dba212dc14dedef1ce76d99422fba93e032d
 
 # Hotword Enrollment
 product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
