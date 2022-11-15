@@ -98,16 +98,8 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
                     continue;
                 }
 
-                if (readBool(fd)) {
-                    mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_FOD);
-                    int arg[2] = {TOUCH_FOD_ENABLE, FOD_STATUS_ON};
-                    ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
-                } else {
-                    mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
-                    set(DISPPARAM_PATH, DISPPARAM_FOD_HBM_OFF);
-                    int arg[2] = {TOUCH_FOD_ENABLE, FOD_STATUS_OFF};
-                    ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
-                }
+                mDevice->extCmd(mDevice, COMMAND_NIT,
+                                readBool(fd) ? PARAM_NIT_FOD : PARAM_NIT_NONE);
             }
         }).detach();
     }
@@ -120,12 +112,25 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
         // nothing
     }
 
-    void onAcquired(int32_t /*result*/, int32_t /*vendorCode*/) {
-        // nothing
+    void onAcquired(int32_t result, int32_t vendorCode) {
+        if (result == FINGERPRINT_ACQUIRED_GOOD) {
+	    set(DISPPARAM_PATH, DISPPARAM_FOD_HBM_OFF);
+            int arg[2] = {TOUCH_FOD_ENABLE, FOD_STATUS_OFF};
+            ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
+        } else if (vendorCode == 21 || vendorCode == 23) {
+            /*
+             * vendorCode = 21 waiting for fingerprint authentication
+             * vendorCode = 23 waiting for fingerprint enroll
+             */
+            int arg[2] = {TOUCH_FOD_ENABLE, FOD_STATUS_ON};
+            ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
+        }
     }
 
     void cancel() {
-        // nothing
+	set(DISPPARAM_PATH, DISPPARAM_FOD_HBM_OFF);
+        int arg[2] = {TOUCH_FOD_ENABLE, FOD_STATUS_OFF};
+        ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
     }
   private:
     fingerprint_device_t *mDevice;
