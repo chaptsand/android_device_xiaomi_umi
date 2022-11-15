@@ -1279,7 +1279,6 @@ vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/etc/sensors/hals.conf
 vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
