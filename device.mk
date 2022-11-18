@@ -146,7 +146,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
-    libmegface
+    libmegface.vendor
 
 PRODUCT_PACKAGES += \
     libpiex_shim
