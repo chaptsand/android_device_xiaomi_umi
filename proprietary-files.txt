@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from UMI V13.0.7.0.SJBCNXM
+# All unpinned blobs are extracted from UMI V13.0.8.0.SJBCNXM
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
