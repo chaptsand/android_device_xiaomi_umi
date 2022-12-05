@@ -20,3 +20,7 @@ allow hal_sensors_default vendor_sysfs_touch:file w_file_perms;
 
 # Allow Sensors hal to r/w to virtual touchpanel sysfs
 allow hal_sensors_default vendor_sysfs_tp_virtual_prox:file rw_file_perms;
+
+# Allow Sensors hal to r/w touchpanel nodes
+r_dir_file(hal_sensors_default, sysfs_touchpanel)
+allow hal_sensors_default sysfs_touchpanel:file rw_file_perms;
