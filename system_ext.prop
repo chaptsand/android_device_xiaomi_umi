@@ -1,3 +1,6 @@
+# Display
+ro.sf.use_latest_hwc_vsync_period=0
+
 # GPS
 persist.sys.gps.fence=true
 persist.sys.gps.polaris=true
