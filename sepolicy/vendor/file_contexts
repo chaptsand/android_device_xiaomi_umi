@@ -45,6 +45,9 @@
 # MSADP partition
 /dev/block/platform/soc/1d84000.ufshc/by-name/msadp         u:object_r:vendor_efs_boot_dev:s0
 
+# NFC
+/vendor/bin/hw/android\.hardware\.nfc_snxxx@1\.2-service    u:object_r:hal_nfc_default_exec:s0
+
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                            u:object_r:persist_subsys_file:s0
 

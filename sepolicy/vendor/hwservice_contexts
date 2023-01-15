@@ -12,3 +12,6 @@ vendor.xiaomi.hardware.touchfeature::ITouchFeature                              
 
 # Mlipay
 vendor.xiaomi.hardware.mlipay::IMlipayService                                        u:object_r:hal_mlipay_hwservice:s0
+
+# NFC
+vendor.nxp.nxpnfc::INxpNfc                                                           u:object_r:hal_nfc_hwservice:s0

@@ -71,10 +71,10 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.nxp.hardware.nfc</name>
+        <name>vendor.nxp.nxpnfc</name>
         <version>2.0</version>
         <interface>
-            <name>INqNfc</name>
+            <name>INxpNfc</name>
             <instance>default</instance>
         </interface>
     </hal>

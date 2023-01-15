@@ -936,8 +936,9 @@ vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
 
-# NFC Firmware
-vendor/lib/libsn100u_fw.so
+# NFC
+vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
+vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
