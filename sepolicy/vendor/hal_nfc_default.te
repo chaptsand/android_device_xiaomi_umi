@@ -1,2 +1,0 @@
-# Allow NFC hal to access vendor_nfc_vendor_data_file
-r_dir_file(hal_nfc_default, vendor_nfc_vendor_data_file)
