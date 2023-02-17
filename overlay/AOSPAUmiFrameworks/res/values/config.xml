@@ -34,4 +34,7 @@
     <!-- Whether to intercept inputs on screen off. -->
     <bool name="config_enableKeyHandler">true</bool>
 
+    <!-- Fingerprint from stock ROM -->
+    <string name="config_stockFingerprint" translatable="false">Xiaomi/umi/umi:12/SKQ1.211006.001/V13.0.8.0.SJBCNXM:user/release-keys</string>
+
 </resources>
