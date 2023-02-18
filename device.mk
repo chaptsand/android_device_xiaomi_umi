@@ -249,6 +249,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     telephony \
     usb \
     vibrator \
+    wfd \
     wlan
 
 # Sensors
@@ -282,3 +283,7 @@ PRODUCT_PACKAGES += \
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wlan/WCNSS_qcom_cfg_qca6390.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6390/WCNSS_qcom_cfg.ini
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libwfdaac_vendor
