@@ -334,18 +334,18 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    CarrierConfigResCommon_Sys \
-    FrameworksResCommon_Sys \
-    SystemUIResCommon_Sys \
-    TelephonyResCommon_Sys \
-    WifiResCommon_Sys
+    CarrierConfigResCommon \
+    FrameworksResCommon \
+    SystemUIResCommon \
+    TelecommResCommon \
+    TelephonyResCommon \
+    WifiResCommon
 
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
     FrameworksResUmi \
     SettingsResUmi \
     SystemUIResUmi \
-    TelephonyResUmi \
     WifiResTarget
 
 # Partitions

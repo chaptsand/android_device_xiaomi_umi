@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2022 The LineageOS Project
+     Copyright (C) 2023 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -8,6 +8,6 @@
 
     <overlay
         android:isStatic="true"
-        android:priority="600"
+        android:priority="700"
         android:targetPackage="com.android.settings" />
 </manifest>
