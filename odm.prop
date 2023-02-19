@@ -1,0 +1,9 @@
+# Audio
+aaudio.mmap_policy=1
+ro.config.vc_call_vol_steps=11
+ro.vendor.audio.sdk.fluencetype=fluence
+vendor.audio.adm.buffering.ms=6
+vendor.audio.feature.dynamic_ecns.enable=false
+vendor.audio.feature.spkr_prot.enable=false
+vendor.audio.hal.output.suspend.supported=false
+vendor.audio.offload.track.enable=false
