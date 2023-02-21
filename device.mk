@@ -131,19 +131,12 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.class_main.sh \
-    init.mdm.sh \
     init.mi.btmac.sh \
     init.mi.usb.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.rc \
-    init.qcom.sh \
     init.qti.dcvs.sh \
-    init.recovery.qcom.rc \
     init.target.rc \
     init.xiaomi.rc \
-    ueventd.qcom.rc
+    ueventd.xiaomi.rc
 
 # IR
 PRODUCT_PACKAGES += \
@@ -198,6 +191,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     gps \
+    init \
     media \
     nfc \
     overlay \

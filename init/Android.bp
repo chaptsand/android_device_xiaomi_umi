@@ -10,26 +10,6 @@ prebuilt_etc {
 }
 
 sh_binary {
-    name: "init.mdm.sh",
-    src: "init.mdm.sh",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.xiaomi.rc",
-    src: "init.xiaomi.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.target.rc",
-    src: "init.target.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.mi.btmac.sh",
     src: "init.mi.btmac.sh",
     vendor: true,
@@ -48,46 +28,22 @@ sh_binary {
 }
 
 prebuilt_etc {
-    name: "init.qcom.rc",
-    src: "init.qcom.rc",
+    name: "init.target.rc",
+    src: "init.target.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.recovery.qcom.rc",
-    src: "init.recovery.qcom.rc",
+    name: "init.xiaomi.rc",
+    src: "init.xiaomi.rc",
     sub_dir: "init",
-    recovery: true,
-}
-
-sh_binary {
-    name: "init.class_main.sh",
-    src: "init.class_main.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.early_boot.sh",
-    src: "init.qcom.early_boot.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.post_boot.sh",
-    src: "init.qcom.post_boot.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.sh",
-    src: "init.qcom.sh",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "ueventd.qcom.rc",
+    name: "ueventd.xiaomi.rc",
     filename: "ueventd.rc",
-    src: "ueventd.qcom.rc",
+    src: "ueventd.xiaomi.rc",
     vendor: true,
 }

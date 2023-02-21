@@ -49,6 +49,7 @@
 /mnt/vendor/persist/subsys(/.*)?                            u:object_r:persist_subsys_file:s0
 
 # Sensors
+/data/vendor/sensor_log(/.*)?                                                                                                       u:object_r:vendor_sensors_vendor_data_file:s0
 /sys/bus/iio/devices                                                                                                                u:object_r:vendor_sysfs_iio:s0
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:vadc@3100/iio:device1(/.*)?            u:object_r:vendor_sysfs_iio:s0
 
