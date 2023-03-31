@@ -50,7 +50,6 @@ vendor.audio.hal.output.suspend.supported=false
 vendor.audio.hw.aac.encoder=true
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.gapless.enabled=true
-vendor.audio.offload.track.enable=false
 vendor.audio.safx.pbe.enabled=false
 vendor.audio.spkcal.copy.inhal=true
 vendor.audio.usb.disable.sidetone=true
@@ -117,7 +116,6 @@ vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
 
 # DPM
-persist.vendor.dpm.feature=1
 persist.vendor.dpm.idletimer.mode=default
 persist.vendor.dpm.loglevel=0
 persist.vendor.dpm.nsrm.bkg.evt=3955
@@ -189,7 +187,6 @@ persist.rcs.supported=0
 # RIL
 persist.radio.multisim.config=dsds
 persist.vendor.radio.atfwd.start=true
-persist.vendor.radio.cdma_cap=false
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.data_ltd_sys_ind=1

@@ -2,7 +2,7 @@
 persist.vendor.cne.feature=1
 
 # DPM
-persist.vendor.dpm.feature=1
+persist.vendor.dpm.feature=11
 
 # Display
 debug.sf.enable_hwc_vds=1
