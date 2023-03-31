@@ -7,8 +7,12 @@
 import /vendor/etc/init/init.batterysecret.rc
 import /vendor/etc/init/init.mi_thermald.rc
 
+on early-init
+    write /dev/memcg/camera/provider/memory.soft_limit_in_bytes 36818038505472
+
 on init
     chown system system /proc/last_kmsg
+    chmod 0666 /dev/uhid
 
     # Mipi Display feature
     chmod 0777 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dynamic_dsi_clock
@@ -30,6 +34,8 @@ on fs
     mkdir /mnt/vendor/persist/subsys 0770 root system
     chmod 0644 /dev/elliptic0
     chmod 0644 /dev/elliptic1
+    chown system system /sys/class/smartpa/re25_calib
+    chmod 0666 /sys/class/smartpa/re25_calib
     chown system system /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/custom_wave
     chmod 0666  /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/custom_wave
 

@@ -75,9 +75,10 @@ on post-fs-data
 
 on early-boot
     start vendor.sensors
+    verity_update_state
 
 on boot
-    write /dev/cpuset/audio-app/cpus 1-2
+    write /dev/cpuset/audio-app/cpus 0-7
     # set default schedTune value for camera-daemon
     write /dev/stune/camera-daemon/schedtune.prefer_idle 1
     write /dev/stune/camera-daemon/schedtune.boost 0
