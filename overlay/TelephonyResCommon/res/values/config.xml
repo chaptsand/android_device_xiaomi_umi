@@ -16,9 +16,12 @@
     <string name="config_ims_mmtel_package" translatable="false">org.codeaurora.ims</string>
 
     <!-- String indicating the package name of the device ImsService implementation for RCS. -->
-    <string name="config_ims_rcs_package" translatable="false">com.android.service.ims</string>
+    <string name="config_ims_rcs_package" translatable="false">vendor.qti.imsrcs</string>
 
     <!-- The package name for the platform number verification supplier app. -->
     <string name="platform_number_verification_package" translatable="false">com.google.android.gms</string>
+
+    <!-- String indicating the package name of the device GbaService implementation. -->
+    <string name="config_gba_package" translatable="false">com.qualcomm.qti.uimGbaApp</string>
 
 </resources>
