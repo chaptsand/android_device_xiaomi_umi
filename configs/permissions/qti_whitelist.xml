@@ -106,7 +106,6 @@
     <hidden-api-whitelisted-app package="com.android.bluetooth" />
     <hidden-api-whitelisted-app package="org.codeaurora.bluetooth" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.qmmi" />
-    <hidden-api-whitelisted-app package="com.qualcomm.qti.perfdump" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.server.wigigapp" />
     <!-- These are location components that need to freely run in the background -->
     <allow-in-power-save package="com.qualcomm.location" />
