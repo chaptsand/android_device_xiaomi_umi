@@ -126,11 +126,19 @@ vendor/etc/audio_cloud_control_white_list.xml
 vendor/etc/audio_effects.conf
 vendor/etc/audio_effects.xml
 vendor/etc/audio_io_policy.conf
+vendor/etc/audio_platform_info.xml
 vendor/etc/audio_platform_info_intcodec.xml
+vendor/etc/audio_platform_info_qrd.xml
+vendor/etc/audio_policy_engine_configuration.xml
+vendor/etc/audio_policy_engine_default_stream_volumes.xml
+vendor/etc/audio_policy_engine_product_strategies_mi.xml:vendor/etc/audio_policy_engine_product_strategies.xml
+vendor/etc/audio_policy_engine_stream_volumes_mi.xml:vendor/etc/audio_policy_engine_stream_volumes.xml
 vendor/etc/audio_policy_volumes.xml
 vendor/etc/audio_tuning_mixer.txt
 vendor/etc/cirrus.cfg
+vendor/etc/cs35l41_cal.wav
 vendor/etc/mixer_paths.xml
+vendor/etc/mixer_paths_cdp.xml
 vendor/etc/mixer_paths_overlay_dynamic.xml
 vendor/etc/mixer_paths_overlay_static.xml
 
